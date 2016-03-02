@@ -7,22 +7,20 @@ class MyTh(threading.Thread):
 		self.details = details
 		threading.Thread.__init__(self)
 
-	def run ( self ):
+	def run ( self ):		
+		client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+		client.connect(('127.0.0.1', 1249))		
+		client.send("close")
 		#while True:
-		#	data = conn.recv(1024)
+		data = client.recv(1024)
 		#	if not data: break
-		print('waiting for a connection')
+		print(data)
 		#	if data == 'close': break
 		#	conn.send(data)
-		#conn.close()
+		client.close()
 
-        
-        
-#s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-#s.bind(('0.0.0.0', 2222))
 #s.listen(10)
-
 #while True:
-for x in range(10):
+#for x in range(10):
 #	conn, addr = s.accept()
-	MyTh(1, 2).start()			
+MyTh(1, 2).start()			

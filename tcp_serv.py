@@ -2,27 +2,31 @@ import socket
 import threading
 
 class MyTh(threading.Thread):
-	def __init__(self, channel, details):
+	def __init__(self, channel, details, number):
 		self.channel = channel
 		self.details = details
+		self.thrID = number
 		threading.Thread.__init__(self)
 
 	def run ( self ):
-		#while True:
-		#	data = conn.recv(1024)
-		#	if not data: break
-		print('waiting for a connection')
-		#	if data == 'close': break
-		#	conn.send(data)
-		#conn.close()
+		#print('starting thread', self.thrID)
+		while True:
+			data = conn.recv(1024)
+			#if not data: break
+			if data == 'close': break	
+			conn.send(data)
+		#print('after close', self.thrID)
+		self.channel.close()
 
         
         
-#s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-#s.bind(('0.0.0.0', 2222))
-#s.listen(10)
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.bind(('0.0.0.0', 2222))
+s.listen(10)
 
-#while True:
-for x in range(10):
-#	conn, addr = s.accept()
-	MyTh(1, 2).start()			
+num = 1
+
+while True:
+	conn, addr = s.accept()
+	MyTh(conn, addr, num).start()			
+	num = num + 1
