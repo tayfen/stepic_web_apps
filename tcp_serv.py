@@ -11,10 +11,10 @@ class MyTh(threading.Thread):
 	def run ( self ):
 		#print('starting thread', self.thrID)
 		while True:
-			data = conn.recv(1024)
+			data = self.channel.recv(1024)
 			#if not data: break
 			if data == 'close': break	
-			conn.send(data)
+			self.channel.send(data)
 		#print('after close', self.thrID)
 		self.channel.close()
 
