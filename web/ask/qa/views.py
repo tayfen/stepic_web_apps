@@ -7,6 +7,6 @@ def test(request, question=0):
     if question != 0:
         return HttpResponse('OK')
     else:
-        return HttpResponseNotFound('NOT OK')
+        return HttpResponse('HTTP 404')
 
 
