@@ -7,3 +7,8 @@ sudo /etc/init.d/nginx restart
 #sudo /etc/init.d/gunicorn restart
 cd ask
 sudo gunicorn -D --bind 0.0.0.0:8000 --access-logfile acc.log --error-logfile err.log ask.wsgi:application  
+
+#mysql -u root -e "create database ask;"
+#mysql -u root -p -e 'show databases;'
+#mysql -u root -p -e "SHOW TABLE STATUS FROM ask" | awk '{print $1, $2}'|column -t
+#sudo restart mysql
