@@ -9,4 +9,16 @@ def test(request, question=0):
     else:
         return HttpResponse('HTTP 404')
 
+def top(request):
+    return HttpResponse('OK')
+    
+def pop(request):
+    return HttpResponse('OK')
+    
+def question(request, question=0):
+    try:
+        quest = Question.objects.get(id=question)
+    except Question.DoesNotExist:
+		raise Http404
+	return HttpResponse('HTTP 404')
 
