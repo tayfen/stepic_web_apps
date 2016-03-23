@@ -21,6 +21,16 @@ cd $SETTINGS_PATH
 #exec $GUNICORN app.settings.staging -c $CONFROOT
 exec $GUNICORN -c $CONFROOT
 
+sudo /etc/init.d/mysql restart
+mysql -u root -p
+
+python manage.py migrate
+# for old dj
+mysql -u root -e "create database ask;"
+python manage.py syncdb
+
+#curl post
+curl --data "title=value1&text=value2" http://127.0.0.1
 
 sudo rm /etc/nginx/sites-enabled/default
 #sudo rm /etc/gunicorn.d/*.example
