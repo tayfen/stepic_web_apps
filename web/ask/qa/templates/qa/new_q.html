@@ -1,0 +1,17 @@
+<ul class ="pagination">
+{% for q in posts %}
+    <li>
+        <a href ="/question/{{ q.id}}/">{{ q.title }}</a>
+    </li>
+{% endfor %}
+{% for p in paginator.page_range %}
+    {% if p.number == page.number %}
+    <li class = "active">
+    {% else %}
+    <li>
+    {% endif %}
+        <a href ="{{ paginator.baseurl }}{{ p }}">{{ p }}</a>
+    </li>
+{% endfor %}
+<!-- <li>{{ question.title }} - {{ question.text }}</a></li> -->
+</ul>

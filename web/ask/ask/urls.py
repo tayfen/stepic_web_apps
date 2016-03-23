@@ -1,13 +1,13 @@
 from django.conf.urls import patterns, include, url
 
 from django.contrib import admin
-from qa.views import test
+from qa.views import *
 
 admin.autodiscover()
 
 urlpatterns = [
     # Examples:
-    url(r"^$", test),
+    url(r"^$", top),
     url(r"^login/.*$", top),
     url(r"^signup/.*$", test),
     url(r"^ask/.*$", test),

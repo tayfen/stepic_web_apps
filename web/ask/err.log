@@ -1,0 +1,14 @@
+[2016-03-22 09:13:43 +0000] [10284] [INFO] Starting gunicorn 19.4.5
+[2016-03-22 09:13:43 +0000] [10284] [INFO] Listening at: http://0.0.0.0:8000 (10284)
+[2016-03-22 09:13:43 +0000] [10284] [INFO] Using worker: sync
+[2016-03-22 09:13:43 +0000] [10291] [INFO] Booting worker with pid: 10291
+[2016-03-22 09:27:54 +0000] [10586] [INFO] Starting gunicorn 19.4.5
+[2016-03-22 09:27:54 +0000] [10586] [INFO] Listening at: http://0.0.0.0:8000 (10586)
+[2016-03-22 09:27:54 +0000] [10586] [INFO] Using worker: sync
+[2016-03-22 09:27:54 +0000] [10626] [INFO] Booting worker with pid: 10626
+[2016-03-22 06:29:31 +0000] [10626] [INFO] Parent changed, shutting down: <Worker 10626>
+[2016-03-22 06:29:31 +0000] [10626] [INFO] Worker exiting (pid: 10626)
+[2016-03-22 09:29:38 +0000] [10640] [INFO] Starting gunicorn 19.4.5
+[2016-03-22 09:29:38 +0000] [10640] [INFO] Listening at: http://0.0.0.0:8000 (10640)
+[2016-03-22 09:29:38 +0000] [10640] [INFO] Using worker: sync
+[2016-03-22 09:29:38 +0000] [10647] [INFO] Booting worker with pid: 10647

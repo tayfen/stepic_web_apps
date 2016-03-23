@@ -1,0 +1,7 @@
+<ul>
+<li> {{ question.title }} - {{ question.text }}</li>
+
+{% for a in answers %}
+    <li> {{ a.text }} </li>
+{% endfor %}
+</ul>

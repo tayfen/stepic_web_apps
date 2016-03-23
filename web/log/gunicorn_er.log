@@ -47,3 +47,382 @@ Traceback (most recent call last):
   File "/home/tayfen/develop/stepic/web_apps/stepic_venv/local/lib/python2.7/site-packages/gunicorn/http/wsgi.py", line 329, in write
     raise TypeError('%r is not a byte' % arg)
 TypeError: [''] is not a byte
+[2016-03-23 12:01:50 +0000] [17594] [DEBUG] Current configuration:
+  proxy_protocol: False
+  worker_connections: 1000
+  statsd_host: None
+  max_requests_jitter: 0
+  post_fork: <function post_fork at 0x26360c8>
+  pythonpath: None
+  enable_stdio_inheritance: False
+  worker_class: sync
+  ssl_version: 3
+  suppress_ragged_eofs: True
+  syslog: False
+  syslog_facility: user
+  when_ready: <function when_ready at 0x2633d70>
+  pre_fork: <function pre_fork at 0x2633ed8>
+  cert_reqs: 0
+  preload_app: False
+  keepalive: 2
+  accesslog: /home/tayfen/develop/stepic/web_apps/web/gunicorn_ac.log
+  group: 1000
+  graceful_timeout: 30
+  do_handshake_on_connect: False
+  spew: False
+  workers: 1
+  proc_name: None
+  sendfile: None
+  pidfile: /home/tayfen/develop/stepic/web_apps/web/gunicorn.pid
+  umask: 0
+  on_reload: <function on_reload at 0x2633c08>
+  pre_exec: <function pre_exec at 0x2636668>
+  worker_tmp_dir: None
+  post_worker_init: <function post_worker_init at 0x2636230>
+  limit_request_fields: 100
+  on_exit: <function on_exit at 0x2636cf8>
+  config: /home/tayfen/develop/stepic/web_apps/web/etc/gunicorn.conf
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  proxy_allow_ips: ['127.0.0.1']
+  pre_request: <function pre_request at 0x26367d0>
+  post_request: <function post_request at 0x26368c0>
+  user: 1000
+  forwarded_allow_ips: ['127.0.0.1']
+  worker_int: <function worker_int at 0x2636398>
+  threads: 1
+  max_requests: 1000
+  limit_request_line: 4094
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  certfile: None
+  worker_exit: <function worker_exit at 0x2636a28>
+  chdir: /home/tayfen/develop/stepic/web_apps/web/ask
+  paste: None
+  default_proc_name: gunicorn
+  errorlog: /home/tayfen/develop/stepic/web_apps/web/log/gunicorn_er.log
+  loglevel: debug
+  logconfig: None
+  syslog_addr: udp://localhost:514
+  syslog_prefix: None
+  daemon: True
+  ciphers: TLSv1
+  on_starting: <function on_starting at 0x2633aa0>
+  worker_abort: <function worker_abort at 0x2636500>
+  bind: ['0:8000']
+  raw_env: []
+  reload: True
+  check_config: False
+  limit_request_field_size: 8190
+  nworkers_changed: <function nworkers_changed at 0x2636b90>
+  timeout: 30
+  ca_certs: None
+  django_settings: None
+  tmp_upload_dir: None
+  keyfile: None
+  backlog: 2048
+  logger_class: gunicorn.glogging.Logger
+  statsd_prefix: 
+[2016-03-23 12:01:50 +0000] [17594] [INFO] Starting gunicorn 19.4.5
+[2016-03-23 12:01:50 +0000] [17594] [DEBUG] Arbiter booted
+[2016-03-23 12:01:50 +0000] [17594] [INFO] Listening at: http://0.0.0.0:8000 (17594)
+[2016-03-23 12:01:50 +0000] [17594] [INFO] Using worker: sync
+[2016-03-23 12:01:50 +0000] [17599] [INFO] Booting worker with pid: 17599
+[2016-03-23 12:01:50 +0000] [17594] [DEBUG] 1 workers
+[2016-03-23 09:01:53 +0000] [17599] [DEBUG] GET /123
+[2016-03-23 09:02:13 +0000] [17599] [DEBUG] GET /question/1/
+[2016-03-23 09:02:20 +0000] [17599] [DEBUG] GET /question/1/
+[2016-03-23 09:02:42 +0000] [17599] [DEBUG] GET /question/1321/
+[2016-03-23 09:02:48 +0000] [17599] [DEBUG] GET /login/
+[2016-03-23 09:02:52 +0000] [17599] [DEBUG] GET /
+[2016-03-23 09:04:00 +0000] [17599] [DEBUG] GET /question/12/
+[2016-03-23 09:04:28 +0000] [17599] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 09:04:28 +0000] [17599] [INFO] Worker exiting (pid: 17599)
+[2016-03-23 12:04:28 +0000] [17607] [INFO] Booting worker with pid: 17607
+[2016-03-23 09:04:29 +0000] [17607] [DEBUG] GET /question/12/
+[2016-03-23 09:04:32 +0000] [17607] [DEBUG] GET /question/12/
+[2016-03-23 09:04:32 +0000] [17607] [DEBUG] GET /question/12/
+[2016-03-23 09:04:33 +0000] [17607] [DEBUG] GET /question/12/
+[2016-03-23 09:04:33 +0000] [17607] [DEBUG] GET /question/12/
+[2016-03-23 09:04:33 +0000] [17607] [DEBUG] GET /question/12/
+[2016-03-23 09:04:34 +0000] [17607] [DEBUG] GET /question/12/
+[2016-03-23 09:04:34 +0000] [17607] [DEBUG] GET /question/12/
+[2016-03-23 09:04:35 +0000] [17607] [DEBUG] GET /question/12/
+[2016-03-23 09:04:35 +0000] [17607] [DEBUG] GET /question/12/
+[2016-03-23 09:04:35 +0000] [17607] [DEBUG] GET /question/12/
+[2016-03-23 09:04:51 +0000] [17607] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 09:04:51 +0000] [17607] [INFO] Worker exiting (pid: 17607)
+[2016-03-23 12:04:51 +0000] [17610] [INFO] Booting worker with pid: 17610
+[2016-03-23 09:05:43 +0000] [17610] [DEBUG] GET /login/
+[2016-03-23 09:05:50 +0000] [17610] [DEBUG] GET /question/12/
+[2016-03-23 09:07:51 +0000] [17610] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 09:07:51 +0000] [17610] [INFO] Worker exiting (pid: 17610)
+[2016-03-23 12:07:51 +0000] [17640] [INFO] Booting worker with pid: 17640
+[2016-03-23 09:07:58 +0000] [17640] [DEBUG] GET /question/12/
+[2016-03-23 09:08:03 +0000] [17640] [DEBUG] GET /question/1/
+[2016-03-23 09:08:08 +0000] [17640] [DEBUG] GET /question/2/
+[2016-03-23 09:11:07 +0000] [17640] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 09:11:07 +0000] [17640] [INFO] Worker exiting (pid: 17640)
+[2016-03-23 12:11:07 +0000] [17674] [INFO] Booting worker with pid: 17674
+[2016-03-23 09:11:23 +0000] [17674] [DEBUG] GET /question/2/
+[2016-03-23 09:11:38 +0000] [17674] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 09:11:38 +0000] [17674] [INFO] Worker exiting (pid: 17674)
+[2016-03-23 12:11:38 +0000] [17684] [INFO] Booting worker with pid: 17684
+[2016-03-23 09:11:39 +0000] [17684] [DEBUG] GET /question/2/
+[2016-03-23 09:11:59 +0000] [17684] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 09:11:59 +0000] [17684] [INFO] Worker exiting (pid: 17684)
+[2016-03-23 12:11:59 +0000] [17687] [INFO] Booting worker with pid: 17687
+[2016-03-23 09:12:11 +0000] [17687] [DEBUG] GET /question/2/
+[2016-03-23 10:33:48 +0000] [17687] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 10:33:48 +0000] [17687] [INFO] Worker exiting (pid: 17687)
+[2016-03-23 13:33:48 +0000] [18472] [INFO] Booting worker with pid: 18472
+[2016-03-23 10:40:47 +0000] [18472] [DEBUG] GET /
+[2016-03-23 10:41:03 +0000] [18472] [DEBUG] GET /
+[2016-03-23 10:41:25 +0000] [18472] [DEBUG] GET /
+[2016-03-23 10:42:52 +0000] [18472] [DEBUG] GET /
+[2016-03-23 10:42:53 +0000] [18472] [DEBUG] GET /
+[2016-03-23 10:42:55 +0000] [18472] [DEBUG] GET /
+[2016-03-23 10:42:56 +0000] [18472] [DEBUG] GET /
+[2016-03-23 10:42:56 +0000] [18472] [DEBUG] GET /
+[2016-03-23 10:44:59 +0000] [18472] [DEBUG] GET /
+[2016-03-23 10:45:01 +0000] [18472] [DEBUG] GET /
+[2016-03-23 10:45:28 +0000] [18472] [DEBUG] GET /
+[2016-03-23 10:48:22 +0000] [18472] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 10:48:22 +0000] [18472] [INFO] Worker exiting (pid: 18472)
+[2016-03-23 13:48:22 +0000] [18624] [INFO] Booting worker with pid: 18624
+[2016-03-23 10:48:34 +0000] [18624] [DEBUG] GET /
+[2016-03-23 10:48:35 +0000] [18624] [DEBUG] GET /
+[2016-03-23 10:52:42 +0000] [18624] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 10:52:42 +0000] [18624] [INFO] Worker exiting (pid: 18624)
+[2016-03-23 13:52:42 +0000] [18712] [INFO] Booting worker with pid: 18712
+[2016-03-23 10:53:01 +0000] [18712] [DEBUG] GET /
+[2016-03-23 10:53:02 +0000] [18712] [DEBUG] GET /
+[2016-03-23 10:53:41 +0000] [18712] [DEBUG] GET /
+[2016-03-23 10:53:42 +0000] [18712] [DEBUG] GET /
+[2016-03-23 10:53:56 +0000] [18712] [DEBUG] GET /
+[2016-03-23 10:53:57 +0000] [18712] [DEBUG] GET /
+[2016-03-23 10:55:10 +0000] [18712] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 10:55:10 +0000] [18712] [INFO] Worker exiting (pid: 18712)
+[2016-03-23 13:55:10 +0000] [18749] [INFO] Booting worker with pid: 18749
+[2016-03-23 10:55:14 +0000] [18749] [DEBUG] GET /
+[2016-03-23 10:55:14 +0000] [18749] [DEBUG] GET /
+[2016-03-23 10:58:56 +0000] [18749] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 10:58:56 +0000] [18749] [INFO] Worker exiting (pid: 18749)
+[2016-03-23 13:58:56 +0000] [18785] [INFO] Booting worker with pid: 18785
+[2016-03-23 10:59:00 +0000] [18785] [DEBUG] GET /
+[2016-03-23 10:59:01 +0000] [18785] [DEBUG] GET /
+[2016-03-23 11:00:05 +0000] [18785] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 11:00:06 +0000] [18785] [INFO] Worker exiting (pid: 18785)
+[2016-03-23 14:00:06 +0000] [18793] [INFO] Booting worker with pid: 18793
+[2016-03-23 11:00:08 +0000] [18793] [DEBUG] GET /
+[2016-03-23 11:00:10 +0000] [18793] [DEBUG] GET /
+[2016-03-23 11:01:25 +0000] [18793] [DEBUG] GET /123
+[2016-03-23 11:01:29 +0000] [18793] [DEBUG] GET /
+[2016-03-23 11:02:09 +0000] [18793] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 11:02:09 +0000] [18793] [INFO] Worker exiting (pid: 18793)
+[2016-03-23 14:02:09 +0000] [18799] [INFO] Booting worker with pid: 18799
+[2016-03-23 11:02:24 +0000] [18799] [DEBUG] GET /
+[2016-03-23 11:02:40 +0000] [18799] [DEBUG] GET /
+[2016-03-23 11:02:48 +0000] [18799] [DEBUG] GET /
+[2016-03-23 11:02:57 +0000] [18799] [DEBUG] GET /
+[2016-03-23 11:07:38 +0000] [18799] [DEBUG] GET /
+[2016-03-23 11:07:39 +0000] [18799] [DEBUG] GET /favicon.ico
+[2016-03-23 11:17:17 +0000] [18799] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 11:17:17 +0000] [18799] [INFO] Worker exiting (pid: 18799)
+[2016-03-23 14:17:17 +0000] [18955] [INFO] Booting worker with pid: 18955
+[2016-03-23 11:17:22 +0000] [18955] [DEBUG] GET /
+[2016-03-23 11:17:24 +0000] [18955] [DEBUG] GET /
+[2016-03-23 11:18:23 +0000] [18955] [DEBUG] GET /
+[2016-03-23 11:18:34 +0000] [18955] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 11:18:34 +0000] [18955] [INFO] Worker exiting (pid: 18955)
+[2016-03-23 14:18:34 +0000] [18959] [INFO] Booting worker with pid: 18959
+[2016-03-23 11:18:36 +0000] [18959] [DEBUG] GET /
+[2016-03-23 11:18:41 +0000] [18959] [DEBUG] GET /
+[2016-03-23 11:18:45 +0000] [18959] [DEBUG] GET /
+[2016-03-23 11:18:48 +0000] [18959] [DEBUG] GET /
+[2016-03-23 11:19:07 +0000] [18959] [DEBUG] GET /
+[2016-03-23 11:26:50 +0000] [18959] [DEBUG] GET /
+[2016-03-23 11:27:15 +0000] [18959] [DEBUG] GET /
+[2016-03-23 11:27:45 +0000] [18959] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 11:27:45 +0000] [18959] [INFO] Worker exiting (pid: 18959)
+[2016-03-23 14:27:45 +0000] [19051] [INFO] Booting worker with pid: 19051
+[2016-03-23 11:27:47 +0000] [19051] [DEBUG] GET /
+[2016-03-23 11:27:47 +0000] [19051] [DEBUG] GET /favicon.ico
+[2016-03-23 11:28:03 +0000] [19051] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 11:28:03 +0000] [19051] [INFO] Worker exiting (pid: 19051)
+[2016-03-23 14:28:03 +0000] [19054] [INFO] Booting worker with pid: 19054
+[2016-03-23 11:28:05 +0000] [19054] [DEBUG] GET /
+[2016-03-23 11:28:05 +0000] [19054] [DEBUG] GET /favicon.ico
+[2016-03-23 11:28:09 +0000] [19054] [DEBUG] GET /question/4/
+[2016-03-23 11:30:06 +0000] [19054] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 11:30:06 +0000] [19054] [INFO] Worker exiting (pid: 19054)
+[2016-03-23 14:30:06 +0000] [19065] [INFO] Booting worker with pid: 19065
+[2016-03-23 11:32:27 +0000] [19065] [DEBUG] GET /
+[2016-03-23 11:32:29 +0000] [19065] [DEBUG] GET /
+[2016-03-23 11:32:32 +0000] [19065] [DEBUG] GET /question/8/
+[2016-03-23 11:32:35 +0000] [19065] [DEBUG] GET /question/8/
+[2016-03-23 11:32:35 +0000] [19065] [DEBUG] GET /favicon.ico
+[2016-03-23 11:32:35 +0000] [19065] [DEBUG] GET /question/8/
+[2016-03-23 11:32:35 +0000] [19065] [DEBUG] GET /favicon.ico
+[2016-03-23 11:32:43 +0000] [19065] [DEBUG] GET /question/1/
+[2016-03-23 11:33:18 +0000] [19065] [DEBUG] GET /question/1/
+[2016-03-23 11:33:18 +0000] [19065] [DEBUG] GET /favicon.ico
+[2016-03-23 11:34:12 +0000] [19065] [DEBUG] GET /question/1/
+[2016-03-23 11:34:13 +0000] [19065] [DEBUG] GET /favicon.ico
+[2016-03-23 11:34:50 +0000] [19065] [DEBUG] GET /question/1/
+[2016-03-23 11:34:50 +0000] [19065] [DEBUG] GET /favicon.ico
+[2016-03-23 11:34:51 +0000] [19065] [DEBUG] GET /question/1/
+[2016-03-23 11:34:51 +0000] [19065] [DEBUG] GET /favicon.ico
+[2016-03-23 11:35:09 +0000] [19065] [DEBUG] GET /question/1/
+[2016-03-23 11:35:09 +0000] [19065] [DEBUG] GET /favicon.ico
+[2016-03-23 11:35:10 +0000] [19065] [DEBUG] GET /question/1/
+[2016-03-23 11:35:10 +0000] [19065] [DEBUG] GET /favicon.ico
+[2016-03-23 11:35:10 +0000] [19065] [DEBUG] GET /question/1/
+[2016-03-23 11:35:10 +0000] [19065] [DEBUG] GET /favicon.ico
+[2016-03-23 11:35:21 +0000] [19065] [DEBUG] GET /question/1/
+[2016-03-23 11:35:21 +0000] [19065] [DEBUG] GET /favicon.ico
+[2016-03-23 11:35:48 +0000] [19065] [DEBUG] GET /question/1/
+[2016-03-23 11:35:48 +0000] [19065] [DEBUG] GET /favicon.ico
+[2016-03-23 11:35:49 +0000] [19065] [DEBUG] GET /question/1/
+[2016-03-23 11:35:49 +0000] [19065] [DEBUG] GET /favicon.ico
+[2016-03-23 11:36:55 +0000] [19065] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 11:36:55 +0000] [19065] [INFO] Worker exiting (pid: 19065)
+[2016-03-23 14:36:55 +0000] [19146] [INFO] Booting worker with pid: 19146
+[2016-03-23 11:37:31 +0000] [19146] [DEBUG] GET /question/1/
+[2016-03-23 11:37:32 +0000] [19146] [DEBUG] GET /favicon.ico
+[2016-03-23 11:37:49 +0000] [19146] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 11:37:49 +0000] [19146] [INFO] Worker exiting (pid: 19146)
+[2016-03-23 14:37:49 +0000] [19156] [INFO] Booting worker with pid: 19156
+[2016-03-23 11:37:51 +0000] [19156] [DEBUG] GET /question/1/
+[2016-03-23 11:37:51 +0000] [19156] [DEBUG] GET /favicon.ico
+[2016-03-23 11:37:52 +0000] [19156] [DEBUG] GET /question/1/
+[2016-03-23 11:37:52 +0000] [19156] [DEBUG] GET /favicon.ico
+[2016-03-23 11:38:00 +0000] [19156] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 11:38:00 +0000] [19156] [INFO] Worker exiting (pid: 19156)
+[2016-03-23 14:38:00 +0000] [19159] [INFO] Booting worker with pid: 19159
+[2016-03-23 11:42:17 +0000] [19159] [DEBUG] GET /question/1/
+[2016-03-23 11:42:17 +0000] [19159] [DEBUG] GET /favicon.ico
+[2016-03-23 11:42:27 +0000] [19159] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 11:42:27 +0000] [19159] [INFO] Worker exiting (pid: 19159)
+[2016-03-23 14:42:27 +0000] [19198] [INFO] Booting worker with pid: 19198
+[2016-03-23 11:42:30 +0000] [19198] [DEBUG] GET /question/1/
+[2016-03-23 11:42:30 +0000] [19198] [DEBUG] GET /favicon.ico
+[2016-03-23 11:42:31 +0000] [19198] [DEBUG] GET /question/1/
+[2016-03-23 11:42:31 +0000] [19198] [DEBUG] GET /favicon.ico
+[2016-03-23 12:14:39 +0000] [19198] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 12:14:39 +0000] [19198] [INFO] Worker exiting (pid: 19198)
+[2016-03-23 15:14:39 +0000] [19345] [INFO] Booting worker with pid: 19345
+[2016-03-23 12:17:24 +0000] [19345] [DEBUG] GET /question/1/
+[2016-03-23 12:17:24 +0000] [19345] [DEBUG] GET /favicon.ico
+[2016-03-23 12:17:25 +0000] [19345] [DEBUG] GET /question/1/
+[2016-03-23 12:17:25 +0000] [19345] [DEBUG] GET /favicon.ico
+[2016-03-23 12:18:23 +0000] [19345] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 12:18:23 +0000] [19345] [INFO] Worker exiting (pid: 19345)
+[2016-03-23 15:18:23 +0000] [19391] [INFO] Booting worker with pid: 19391
+[2016-03-23 12:18:28 +0000] [19391] [DEBUG] GET /question/1/
+[2016-03-23 12:18:29 +0000] [19391] [DEBUG] GET /favicon.ico
+[2016-03-23 12:18:29 +0000] [19391] [DEBUG] GET /question/1/
+[2016-03-23 12:18:29 +0000] [19391] [DEBUG] GET /favicon.ico
+[2016-03-23 12:18:40 +0000] [19391] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 12:18:40 +0000] [19391] [INFO] Worker exiting (pid: 19391)
+[2016-03-23 15:18:40 +0000] [19394] [INFO] Booting worker with pid: 19394
+[2016-03-23 12:18:42 +0000] [19394] [DEBUG] GET /question/1/
+[2016-03-23 12:18:42 +0000] [19394] [DEBUG] GET /favicon.ico
+[2016-03-23 12:18:42 +0000] [19394] [DEBUG] GET /question/1/
+[2016-03-23 12:18:42 +0000] [19394] [DEBUG] GET /favicon.ico
+[2016-03-23 12:19:20 +0000] [19394] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 12:19:20 +0000] [19394] [INFO] Worker exiting (pid: 19394)
+[2016-03-23 15:19:20 +0000] [19400] [INFO] Booting worker with pid: 19400
+[2016-03-23 12:19:22 +0000] [19400] [DEBUG] GET /question/1/
+[2016-03-23 12:19:22 +0000] [19400] [DEBUG] GET /favicon.ico
+[2016-03-23 12:22:09 +0000] [19400] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 12:22:09 +0000] [19400] [INFO] Worker exiting (pid: 19400)
+[2016-03-23 15:22:09 +0000] [19412] [INFO] Booting worker with pid: 19412
+[2016-03-23 12:22:11 +0000] [19412] [DEBUG] GET /question/1/
+[2016-03-23 12:22:11 +0000] [19412] [DEBUG] GET /favicon.ico
+[2016-03-23 12:22:12 +0000] [19412] [DEBUG] GET /question/1/
+[2016-03-23 12:22:12 +0000] [19412] [DEBUG] GET /favicon.ico
+[2016-03-23 12:22:12 +0000] [19412] [DEBUG] GET /question/1/
+[2016-03-23 12:22:12 +0000] [19412] [DEBUG] GET /favicon.ico
+[2016-03-23 12:22:13 +0000] [19412] [DEBUG] GET /question/1/
+[2016-03-23 12:22:13 +0000] [19412] [DEBUG] GET /favicon.ico
+[2016-03-23 12:22:13 +0000] [19412] [DEBUG] GET /question/1/
+[2016-03-23 12:22:13 +0000] [19412] [DEBUG] GET /favicon.ico
+[2016-03-23 12:22:13 +0000] [19412] [DEBUG] GET /question/1/
+[2016-03-23 12:22:13 +0000] [19412] [DEBUG] GET /favicon.ico
+[2016-03-23 12:22:18 +0000] [19412] [DEBUG] GET /question/1/
+[2016-03-23 12:22:18 +0000] [19412] [DEBUG] GET /favicon.ico
+[2016-03-23 12:22:19 +0000] [19412] [DEBUG] GET /question/1/
+[2016-03-23 12:22:19 +0000] [19412] [DEBUG] GET /favicon.ico
+[2016-03-23 12:22:19 +0000] [19412] [DEBUG] GET /question/1/
+[2016-03-23 12:22:19 +0000] [19412] [DEBUG] GET /favicon.ico
+[2016-03-23 12:22:31 +0000] [19412] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 12:22:31 +0000] [19412] [INFO] Worker exiting (pid: 19412)
+[2016-03-23 15:22:31 +0000] [19417] [INFO] Booting worker with pid: 19417
+[2016-03-23 12:22:32 +0000] [19417] [DEBUG] GET /question/1/
+[2016-03-23 12:22:32 +0000] [19417] [DEBUG] GET /favicon.ico
+[2016-03-23 12:22:39 +0000] [19417] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 12:22:39 +0000] [19417] [INFO] Worker exiting (pid: 19417)
+[2016-03-23 15:22:39 +0000] [19420] [INFO] Booting worker with pid: 19420
+[2016-03-23 12:22:42 +0000] [19420] [DEBUG] GET /question/1/
+[2016-03-23 12:22:42 +0000] [19420] [DEBUG] GET /favicon.ico
+[2016-03-23 12:22:43 +0000] [19420] [DEBUG] GET /question/1/
+[2016-03-23 12:22:43 +0000] [19420] [DEBUG] GET /favicon.ico
+[2016-03-23 12:23:28 +0000] [19420] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 12:23:28 +0000] [19420] [INFO] Worker exiting (pid: 19420)
+[2016-03-23 15:23:28 +0000] [19426] [INFO] Booting worker with pid: 19426
+[2016-03-23 12:23:31 +0000] [19426] [DEBUG] GET /question/1/
+[2016-03-23 12:23:31 +0000] [19426] [DEBUG] GET /favicon.ico
+[2016-03-23 12:25:35 +0000] [19426] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 12:25:36 +0000] [19426] [INFO] Worker exiting (pid: 19426)
+[2016-03-23 15:25:36 +0000] [19434] [INFO] Booting worker with pid: 19434
+[2016-03-23 12:26:57 +0000] [19434] [DEBUG] GET /question/1/
+[2016-03-23 12:26:57 +0000] [19434] [DEBUG] GET /favicon.ico
+[2016-03-23 12:27:20 +0000] [19434] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 12:27:20 +0000] [19434] [INFO] Worker exiting (pid: 19434)
+[2016-03-23 15:27:20 +0000] [19439] [INFO] Booting worker with pid: 19439
+[2016-03-23 12:27:21 +0000] [19439] [DEBUG] GET /question/1/
+[2016-03-23 12:27:22 +0000] [19439] [DEBUG] GET /favicon.ico
+[2016-03-23 12:27:34 +0000] [19439] [DEBUG] GET /question/2/
+[2016-03-23 12:28:03 +0000] [19439] [DEBUG] GET /question/7/
+[2016-03-23 12:28:16 +0000] [19439] [DEBUG] GET /question/6/
+[2016-03-23 12:28:22 +0000] [19439] [DEBUG] GET /question/3/
+[2016-03-23 12:30:32 +0000] [19439] [DEBUG] GET /question/2/
+[2016-03-23 12:30:32 +0000] [19439] [DEBUG] GET /favicon.ico
+[2016-03-23 12:35:48 +0000] [19439] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 12:35:48 +0000] [19439] [INFO] Worker exiting (pid: 19439)
+[2016-03-23 15:35:48 +0000] [19461] [INFO] Booting worker with pid: 19461
+[2016-03-23 12:35:56 +0000] [19461] [DEBUG] GET /question/2/
+[2016-03-23 12:35:56 +0000] [19461] [DEBUG] GET /favicon.ico
+[2016-03-23 12:35:57 +0000] [19461] [DEBUG] GET /question/2/
+[2016-03-23 12:35:57 +0000] [19461] [DEBUG] GET /favicon.ico
+[2016-03-23 12:36:08 +0000] [19461] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 12:36:08 +0000] [19461] [INFO] Worker exiting (pid: 19461)
+[2016-03-23 15:36:08 +0000] [19464] [INFO] Booting worker with pid: 19464
+[2016-03-23 12:36:13 +0000] [19464] [DEBUG] GET /question/2/
+[2016-03-23 12:36:13 +0000] [19464] [DEBUG] GET /favicon.ico
+[2016-03-23 12:36:14 +0000] [19464] [DEBUG] GET /question/2/
+[2016-03-23 12:36:14 +0000] [19464] [DEBUG] GET /favicon.ico
+[2016-03-23 12:36:46 +0000] [19464] [DEBUG] GET /question/2/
+[2016-03-23 12:36:46 +0000] [19464] [DEBUG] GET /favicon.ico
+[2016-03-23 12:36:47 +0000] [19464] [DEBUG] GET /question/2/
+[2016-03-23 12:36:47 +0000] [19464] [DEBUG] GET /favicon.ico
+[2016-03-23 12:37:36 +0000] [19464] [DEBUG] GET /question/2/
+[2016-03-23 12:37:37 +0000] [19464] [DEBUG] GET /favicon.ico
+[2016-03-23 12:37:37 +0000] [19464] [DEBUG] GET /question/2/
+[2016-03-23 12:37:37 +0000] [19464] [DEBUG] GET /favicon.ico
+[2016-03-23 12:37:37 +0000] [19464] [DEBUG] GET /question/2/
+[2016-03-23 12:37:37 +0000] [19464] [DEBUG] GET /favicon.ico
+[2016-03-23 12:37:38 +0000] [19464] [DEBUG] GET /question/2/
+[2016-03-23 12:37:38 +0000] [19464] [DEBUG] GET /favicon.ico
+[2016-03-23 12:38:21 +0000] [19464] [DEBUG] GET /question/2/
+[2016-03-23 12:38:21 +0000] [19464] [DEBUG] GET /favicon.ico
+[2016-03-23 12:38:33 +0000] [19464] [DEBUG] GET /
+[2016-03-23 12:40:25 +0000] [19464] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 12:40:26 +0000] [19464] [INFO] Worker exiting (pid: 19464)
+[2016-03-23 15:40:26 +0000] [19506] [INFO] Booting worker with pid: 19506
+[2016-03-23 12:40:28 +0000] [19506] [DEBUG] GET /
+[2016-03-23 12:40:28 +0000] [19506] [DEBUG] GET /favicon.ico
+[2016-03-23 12:40:38 +0000] [19506] [DEBUG] GET /qa/
+[2016-03-23 12:41:44 +0000] [19506] [INFO] Worker reloading: /home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py modified
+[2016-03-23 12:41:44 +0000] [19506] [INFO] Worker exiting (pid: 19506)
+[2016-03-23 15:41:44 +0000] [19514] [INFO] Booting worker with pid: 19514
+[2016-03-23 12:42:14 +0000] [19514] [DEBUG] GET /popular/
