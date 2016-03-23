@@ -53,16 +53,16 @@ def question(request, quest=0):
     return HttpResponse('HTTP 404 quest')
 
 def ask(request):
-    #if request.method == "GET":
-    if request.method == "POST":
+    if request.method == "GET":
+    #if request.method == "POST":
         form = AskForm()
         return render(request, 'qa/ask.html', {
         'form' : form,
         })
     else:
-        #form = AskForm(request.POST)
+        form = AskForm(request.POST)
         #author = User(id=1)
-        form = AskForm(request.GET)
+        #form = AskForm(request.GET)
         if form.is_valid():
             post = form.save()
             url = post._get_url()
@@ -71,7 +71,7 @@ def ask(request):
             raise Http404('bad form')
 
 def answer(request):
-    form = AnswerForm(request.GET)
+    form = AnswerForm(request.POST)
     if form.is_valid():
         post = form.save()
         url = post._get_url()
