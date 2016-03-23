@@ -739,3 +739,935 @@ Traceback (most recent call last):
                      ^
 IndentationError: unindent does not match any outer indentation level
 [2016-03-23 16:36:13 +0000] [21664] [DEBUG] GET /ask/
+2016-03-23 20:50:16 [4138] [INFO] Starting gunicorn 17.5
+2016-03-23 20:50:16 [4138] [DEBUG] Arbiter booted
+2016-03-23 20:50:16 [4138] [INFO] Listening at: http://0.0.0.0:8000 (4138)
+2016-03-23 20:50:16 [4138] [INFO] Using worker: sync
+2016-03-23 20:50:16 [4143] [INFO] Booting worker with pid: 4143
+2016-03-23 20:50:17 [4143] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 473, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/base.py", line 115, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/djangoapp.py", line 101, in load
+    mod = util.import_module("gunicorn.app.django_wsgi")
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/django_wsgi.py", line 20, in <module>
+    from django.core.management.validation import get_validation_errors
+ImportError: No module named validation
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 473, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/base.py", line 115, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/djangoapp.py", line 101, in load
+    mod = util.import_module("gunicorn.app.django_wsgi")
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/django_wsgi.py", line 20, in <module>
+    from django.core.management.validation import get_validation_errors
+ImportError: No module named validation
+2016-03-23 20:50:17 [4143] [INFO] Worker exiting (pid: 4143)
+2016-03-23 20:50:17 [4138] [INFO] Shutting down: Master
+2016-03-23 20:50:17 [4138] [INFO] Reason: Worker failed to boot.
+2016-03-23 20:55:27 [4205] [INFO] Starting gunicorn 17.5
+2016-03-23 20:55:27 [4205] [DEBUG] Arbiter booted
+2016-03-23 20:55:27 [4205] [INFO] Listening at: http://0.0.0.0:8000 (4205)
+2016-03-23 20:55:27 [4205] [INFO] Using worker: sync
+2016-03-23 20:55:27 [4210] [INFO] Booting worker with pid: 4210
+2016-03-23 17:55:27 [4210] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 473, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/base.py", line 115, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 33, in load
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/dist-packages/gunicorn/util.py", line 362, in import_app
+    __import__(module)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/ask/wsgi.py", line 14, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/models.py", line 17
+    def get_url(self):
+                     ^
+IndentationError: unindent does not match any outer indentation level
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 473, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/base.py", line 115, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 33, in load
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/dist-packages/gunicorn/util.py", line 362, in import_app
+    __import__(module)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/ask/wsgi.py", line 14, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/models.py", line 17
+    def get_url(self):
+                     ^
+IndentationError: unindent does not match any outer indentation level
+2016-03-23 17:55:27 [4210] [INFO] Worker exiting (pid: 4210)
+2016-03-23 20:55:28 [4205] [INFO] Shutting down: Master
+2016-03-23 20:55:28 [4205] [INFO] Reason: Worker failed to boot.
+2016-03-23 20:56:32 [4216] [INFO] Starting gunicorn 17.5
+2016-03-23 20:56:32 [4216] [DEBUG] Arbiter booted
+2016-03-23 20:56:32 [4216] [INFO] Listening at: http://0.0.0.0:8000 (4216)
+2016-03-23 20:56:32 [4216] [INFO] Using worker: sync
+2016-03-23 20:56:32 [4221] [INFO] Booting worker with pid: 4221
+2016-03-23 17:56:50 [4221] [DEBUG] GET /ask/
+Not Found: /ask/
+2016-03-23 17:59:12 [4221] [DEBUG] GET /ask/
+Not Found: /ask/
+2016-03-23 17:59:15 [4221] [DEBUG] GET /
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 20, in top
+    page = paginator.page(page)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/paginator.py", line 50, in page
+    number = self.validate_number(number)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/paginator.py", line 39, in validate_number
+    if number > self.num_pages:
+  File "/usr/local/lib/python2.7/dist-packages/django/core/paginator.py", line 86, in _get_num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "/usr/local/lib/python2.7/dist-packages/django/core/paginator.py", line 72, in _get_count
+    self._count = self.object_list.count()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 371, in count
+    return self.query.get_count(using=self.db)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 483, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 464, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/compiler.py", line 846, in execute_sql
+    cursor = self.connection.cursor()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 231, in cursor
+    cursor = self.make_debug_cursor(self._cursor())
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 204, in _cursor
+    self.ensure_connection()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 199, in ensure_connection
+    self.connect()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/base/base.py", line 171, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/mysql/base.py", line 264, in get_new_connection
+    conn = Database.connect(**conn_params)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 193, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+OperationalError: (1049, "Unknown database 'ask'")
+2016-03-23 18:05:31 [4221] [INFO] Parent changed, shutting down: <Worker 4221>
+2016-03-23 18:05:31 [4221] [INFO] Worker exiting (pid: 4221)
+2016-03-23 21:14:18 [5678] [INFO] Starting gunicorn 17.5
+2016-03-23 21:14:18 [5678] [DEBUG] Arbiter booted
+2016-03-23 21:14:18 [5678] [INFO] Listening at: http://0.0.0.0:8000 (5678)
+2016-03-23 21:14:18 [5678] [INFO] Using worker: sync
+2016-03-23 21:14:18 [5683] [INFO] Booting worker with pid: 5683
+2016-03-23 18:14:21 [5683] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
+  "unable to load templates.", RemovedInDjango110Warning)
+
+2016-03-23 18:16:11 [5683] [DEBUG] GET /
+2016-03-23 19:51:12 [5683] [DEBUG] GET /
+2016-03-23 19:51:47 [5683] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post.get_url()
+AttributeError: 'Question' object has no attribute 'get_url'
+2016-03-23 20:51:46 [5683] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post.get_url()
+AttributeError: 'Question' object has no attribute 'get_url'
+2016-03-23 20:51:52 [5683] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post.get_url()
+AttributeError: 'Question' object has no attribute 'get_url'
+2016-03-23 20:51:53 [5683] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post.get_url()
+AttributeError: 'Question' object has no attribute 'get_url'
+2016-03-23 20:51:53 [5683] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post.get_url()
+AttributeError: 'Question' object has no attribute 'get_url'
+2016-03-23 20:51:54 [5683] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post.get_url()
+AttributeError: 'Question' object has no attribute 'get_url'
+2016-03-23 20:51:54 [5683] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post.get_url()
+AttributeError: 'Question' object has no attribute 'get_url'
+2016-03-23 20:51:55 [5683] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post.get_url()
+AttributeError: 'Question' object has no attribute 'get_url'
+2016-03-23 21:00:03 [5683] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post.get_absolute_url()
+AttributeError: 'Question' object has no attribute 'get_url'
+2016-03-23 21:00:04 [5683] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post.get_absolute_url()
+AttributeError: 'Question' object has no attribute 'get_url'
+2016-03-23 21:00:05 [5683] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post.get_absolute_url()
+AttributeError: 'Question' object has no attribute 'get_url'
+2016-03-23 21:00:06 [5683] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post.get_absolute_url()
+AttributeError: 'Question' object has no attribute 'get_url'
+2016-03-23 21:00:06 [5683] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post.get_absolute_url()
+AttributeError: 'Question' object has no attribute 'get_url'
+2016-03-23 21:00:07 [5683] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post.get_absolute_url()
+AttributeError: 'Question' object has no attribute 'get_url'
+2016-03-23 21:00:47 [5683] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post.get_absolute_url()
+AttributeError: 'Question' object has no attribute 'get_url'
+2016-03-23 21:00:48 [5683] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post.get_absolute_url()
+AttributeError: 'Question' object has no attribute 'get_url'
+2016-03-23 21:00:49 [5683] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post.get_absolute_url()
+AttributeError: 'Question' object has no attribute 'get_url'
+2016-03-23 21:00:49 [5683] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post.get_absolute_url()
+AttributeError: 'Question' object has no attribute 'get_url'
+2016-03-23 21:00:50 [5683] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post.get_absolute_url()
+AttributeError: 'Question' object has no attribute 'get_url'
+2016-03-24 00:01:49 [8380] [INFO] Starting gunicorn 17.5
+2016-03-24 00:01:49 [8380] [ERROR] Connection in use: ('0', 8000)
+2016-03-24 00:01:49 [8380] [ERROR] Retrying in 1 second.
+2016-03-23 21:01:50 [5683] [INFO] Parent changed, shutting down: <Worker 5683>
+2016-03-23 21:01:50 [5683] [INFO] Worker exiting (pid: 5683)
+2016-03-24 00:01:50 [8380] [DEBUG] Arbiter booted
+2016-03-24 00:01:50 [8380] [INFO] Listening at: http://0.0.0.0:8000 (8380)
+2016-03-24 00:01:50 [8380] [INFO] Using worker: sync
+2016-03-24 00:01:50 [8385] [INFO] Booting worker with pid: 8385
+2016-03-23 21:01:53 [8385] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post.get_absolute_url()
+AttributeError: 'Question' object has no attribute 'get_absolute_url'
+2016-03-23 21:01:54 [8385] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post.get_absolute_url()
+AttributeError: 'Question' object has no attribute 'get_absolute_url'
+2016-03-23 21:01:55 [8385] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post.get_absolute_url()
+AttributeError: 'Question' object has no attribute 'get_absolute_url'
+2016-03-23 21:07:44 [8385] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post.get_url()
+AttributeError: 'Question' object has no attribute 'get_absolute_url'
+2016-03-23 21:07:45 [8385] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post.get_url()
+AttributeError: 'Question' object has no attribute 'get_absolute_url'
+2016-03-24 00:07:58 [8399] [INFO] Starting gunicorn 17.5
+2016-03-24 00:07:58 [8399] [ERROR] Connection in use: ('0', 8000)
+2016-03-24 00:07:58 [8399] [ERROR] Retrying in 1 second.
+2016-03-24 00:07:59 [8399] [ERROR] Connection in use: ('0', 8000)
+2016-03-24 00:07:59 [8399] [ERROR] Retrying in 1 second.
+2016-03-24 00:08:00 [8399] [ERROR] Connection in use: ('0', 8000)
+2016-03-24 00:08:00 [8399] [ERROR] Retrying in 1 second.
+2016-03-23 21:08:00 [8385] [INFO] Parent changed, shutting down: <Worker 8385>
+2016-03-23 21:08:00 [8385] [INFO] Worker exiting (pid: 8385)
+2016-03-24 00:08:01 [8399] [DEBUG] Arbiter booted
+2016-03-24 00:08:01 [8399] [INFO] Listening at: http://0.0.0.0:8000 (8399)
+2016-03-24 00:08:01 [8399] [INFO] Using worker: sync
+2016-03-24 00:08:01 [8404] [INFO] Booting worker with pid: 8404
+2016-03-23 21:08:01 [8404] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 473, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/base.py", line 115, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 33, in load
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/dist-packages/gunicorn/util.py", line 362, in import_app
+    __import__(module)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/ask/wsgi.py", line 14, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/models.py", line 17
+    def _get_url(self):
+                      ^
+IndentationError: unindent does not match any outer indentation level
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 473, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/base.py", line 115, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 33, in load
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/dist-packages/gunicorn/util.py", line 362, in import_app
+    __import__(module)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/ask/wsgi.py", line 14, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/models.py", line 17
+    def _get_url(self):
+                      ^
+IndentationError: unindent does not match any outer indentation level
+2016-03-23 21:08:01 [8404] [INFO] Worker exiting (pid: 8404)
+2016-03-24 00:08:01 [8399] [INFO] Shutting down: Master
+2016-03-24 00:08:01 [8399] [INFO] Reason: Worker failed to boot.
+2016-03-24 00:11:22 [8455] [INFO] Starting gunicorn 17.5
+2016-03-24 00:11:22 [8455] [DEBUG] Arbiter booted
+2016-03-24 00:11:22 [8455] [INFO] Listening at: http://0.0.0.0:8000 (8455)
+2016-03-24 00:11:22 [8455] [INFO] Using worker: sync
+2016-03-24 00:11:22 [8460] [INFO] Booting worker with pid: 8460
+2016-03-23 21:11:22 [8460] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 473, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/base.py", line 115, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 33, in load
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/dist-packages/gunicorn/util.py", line 362, in import_app
+    __import__(module)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/ask/wsgi.py", line 14, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/models.py", line 17
+    def _get_url(self):
+                      ^
+IndentationError: unindent does not match any outer indentation level
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 473, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/base.py", line 115, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 33, in load
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/dist-packages/gunicorn/util.py", line 362, in import_app
+    __import__(module)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/ask/wsgi.py", line 14, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lib/python2.7/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup()
+  File "/usr/local/lib/python2.7/dist-packages/django/__init__.py", line 18, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/usr/local/lib/python2.7/dist-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/models.py", line 17
+    def _get_url(self):
+                      ^
+IndentationError: unindent does not match any outer indentation level
+2016-03-23 21:11:22 [8460] [INFO] Worker exiting (pid: 8460)
+2016-03-24 00:11:23 [8455] [INFO] Shutting down: Master
+2016-03-24 00:11:23 [8455] [INFO] Reason: Worker failed to boot.
+2016-03-24 00:15:50 [8477] [INFO] Starting gunicorn 17.5
+2016-03-24 00:15:50 [8477] [DEBUG] Arbiter booted
+2016-03-24 00:15:50 [8477] [INFO] Listening at: http://0.0.0.0:8000 (8477)
+2016-03-24 00:15:50 [8477] [INFO] Using worker: sync
+2016-03-24 00:15:50 [8482] [INFO] Booting worker with pid: 8482
+2016-03-23 21:16:08 [8482] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 374, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/ask/urls.py", line 4, in <module>
+    from qa.views import *
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 2, in <module>
+    from .models import Answer, Question, User, get_url
+ImportError: cannot import name get_url
+2016-03-23 21:16:29 [8482] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post.get_url()
+AttributeError: 'Question' object has no attribute 'get_url'
+2016-03-23 21:16:32 [8482] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post.get_url()
+AttributeError: 'Question' object has no attribute 'get_url'
+2016-03-23 21:16:33 [8482] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post.get_url()
+AttributeError: 'Question' object has no attribute 'get_url'
+2016-03-23 21:16:55 [8482] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post._get_url()
+AttributeError: 'Question' object has no attribute 'get_url'
+2016-03-23 21:16:56 [8482] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post._get_url()
+AttributeError: 'Question' object has no attribute 'get_url'
+2016-03-23 21:16:57 [8482] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post._get_url()
+AttributeError: 'Question' object has no attribute 'get_url'
+2016-03-23 21:16:58 [8482] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post._get_url()
+AttributeError: 'Question' object has no attribute 'get_url'
+2016-03-23 21:16:59 [8482] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post._get_url()
+AttributeError: 'Question' object has no attribute 'get_url'
+2016-03-23 21:17:00 [8482] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post._get_url()
+AttributeError: 'Question' object has no attribute 'get_url'
+2016-03-23 21:17:02 [8482] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post._get_url()
+AttributeError: 'Question' object has no attribute 'get_url'
+2016-03-24 00:17:24 [8495] [INFO] Starting gunicorn 17.5
+2016-03-24 00:17:24 [8495] [ERROR] Connection in use: ('0', 8000)
+2016-03-24 00:17:24 [8495] [ERROR] Retrying in 1 second.
+2016-03-24 00:17:25 [8495] [ERROR] Connection in use: ('0', 8000)
+2016-03-24 00:17:25 [8495] [ERROR] Retrying in 1 second.
+2016-03-24 00:17:26 [8495] [ERROR] Connection in use: ('0', 8000)
+2016-03-24 00:17:26 [8495] [ERROR] Retrying in 1 second.
+2016-03-24 00:17:27 [8495] [ERROR] Connection in use: ('0', 8000)
+2016-03-24 00:17:27 [8495] [ERROR] Retrying in 1 second.
+2016-03-24 00:17:28 [8495] [ERROR] Connection in use: ('0', 8000)
+2016-03-24 00:17:28 [8495] [ERROR] Retrying in 1 second.
+2016-03-24 00:17:29 [8495] [ERROR] Can't connect to ('0', 8000)
+2016-03-23 21:17:32 [8482] [INFO] Parent changed, shutting down: <Worker 8482>
+2016-03-23 21:17:32 [8482] [INFO] Worker exiting (pid: 8482)
+2016-03-24 00:17:52 [8506] [INFO] Starting gunicorn 17.5
+2016-03-24 00:17:52 [8506] [DEBUG] Arbiter booted
+2016-03-24 00:17:52 [8506] [INFO] Listening at: http://0.0.0.0:8000 (8506)
+2016-03-24 00:17:52 [8506] [INFO] Using worker: sync
+2016-03-24 00:17:52 [8511] [INFO] Booting worker with pid: 8511
+2016-03-23 21:18:02 [8511] [DEBUG] GET /ask/
+2016-03-23 21:18:02 [8511] [DEBUG] GET /ask/question/
+Not Found: /ask/question/
+2016-03-23 21:18:05 [8511] [DEBUG] GET /ask/question/
+Not Found: /ask/question/
+2016-03-23 21:18:42 [8511] [DEBUG] GET /ask/
+2016-03-23 21:18:42 [8511] [DEBUG] GET /ask/question/
+Not Found: /ask/question/
+2016-03-23 21:34:43 [8511] [DEBUG] GET /ask/
+2016-03-23 21:34:43 [8511] [DEBUG] GET /ask/question/
+Not Found: /ask/question/
+2016-03-23 21:34:51 [8511] [DEBUG] GET /ask/
+2016-03-23 21:34:52 [8511] [DEBUG] GET /ask/question/
+Not Found: /ask/question/
+2016-03-24 00:35:06 [8895] [INFO] Starting gunicorn 17.5
+2016-03-24 00:35:06 [8895] [ERROR] Connection in use: ('0', 8000)
+2016-03-24 00:35:06 [8895] [ERROR] Retrying in 1 second.
+2016-03-23 21:35:07 [8511] [INFO] Parent changed, shutting down: <Worker 8511>
+2016-03-23 21:35:07 [8511] [INFO] Worker exiting (pid: 8511)
+2016-03-24 00:35:07 [8895] [DEBUG] Arbiter booted
+2016-03-24 00:35:07 [8895] [INFO] Listening at: http://0.0.0.0:8000 (8895)
+2016-03-24 00:35:07 [8895] [INFO] Using worker: sync
+2016-03-24 00:35:07 [8900] [INFO] Booting worker with pid: 8900
+2016-03-23 21:35:14 [8900] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post._get_url()
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/models.py", line 18, in _get_url
+    return "http://127.0.0.1/question/"+self.id
+TypeError: coercing to Unicode: need string or buffer, long found
+2016-03-23 21:35:58 [8900] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post._get_url()
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/models.py", line 18, in _get_url
+    return "http://127.0.0.1/question/"+u'self.id'
+TypeError: coercing to Unicode: need string or buffer, long found
+2016-03-23 21:35:59 [8900] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post._get_url()
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/models.py", line 18, in _get_url
+    return "http://127.0.0.1/question/"+u'self.id'
+TypeError: coercing to Unicode: need string or buffer, long found
+2016-03-24 00:36:07 [8910] [INFO] Starting gunicorn 17.5
+2016-03-24 00:36:07 [8910] [ERROR] Connection in use: ('0', 8000)
+2016-03-24 00:36:07 [8910] [ERROR] Retrying in 1 second.
+2016-03-24 00:36:08 [8910] [ERROR] Connection in use: ('0', 8000)
+2016-03-24 00:36:08 [8910] [ERROR] Retrying in 1 second.
+2016-03-24 00:36:09 [8910] [ERROR] Connection in use: ('0', 8000)
+2016-03-24 00:36:09 [8910] [ERROR] Retrying in 1 second.
+2016-03-23 21:36:10 [8900] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 68, in ask
+    url = post._get_url()
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/models.py", line 18, in _get_url
+    return "http://127.0.0.1/question/"+u'self.id'
+TypeError: coercing to Unicode: need string or buffer, long found
+2016-03-23 21:36:10 [8900] [INFO] Parent changed, shutting down: <Worker 8900>
+2016-03-23 21:36:10 [8900] [INFO] Worker exiting (pid: 8900)
+2016-03-24 00:36:10 [8910] [DEBUG] Arbiter booted
+2016-03-24 00:36:10 [8910] [INFO] Listening at: http://0.0.0.0:8000 (8910)
+2016-03-24 00:36:10 [8910] [INFO] Using worker: sync
+2016-03-24 00:36:10 [8915] [INFO] Booting worker with pid: 8915
+2016-03-23 21:36:11 [8915] [DEBUG] GET /ask/
+2016-03-23 21:36:11 [8915] [DEBUG] GET /question/self.id
+Not Found: /question/self.id
+2016-03-23 21:37:31 [8915] [DEBUG] GET /ask/
+2016-03-23 21:37:31 [8915] [DEBUG] GET /question/self.id
+Not Found: /question/self.id
+2016-03-24 00:37:38 [8926] [INFO] Starting gunicorn 17.5
+2016-03-24 00:37:38 [8926] [ERROR] Connection in use: ('0', 8000)
+2016-03-24 00:37:38 [8926] [ERROR] Retrying in 1 second.
+2016-03-24 00:37:39 [8926] [ERROR] Connection in use: ('0', 8000)
+2016-03-24 00:37:39 [8926] [ERROR] Retrying in 1 second.
+2016-03-24 00:37:40 [8926] [ERROR] Connection in use: ('0', 8000)
+2016-03-24 00:37:40 [8926] [ERROR] Retrying in 1 second.
+2016-03-24 00:37:41 [8926] [ERROR] Connection in use: ('0', 8000)
+2016-03-24 00:37:41 [8926] [ERROR] Retrying in 1 second.
+2016-03-24 00:37:42 [8926] [ERROR] Connection in use: ('0', 8000)
+2016-03-24 00:37:42 [8926] [ERROR] Retrying in 1 second.
+2016-03-24 00:37:43 [8926] [ERROR] Can't connect to ('0', 8000)
+2016-03-23 21:37:44 [8915] [DEBUG] GET /ask/
+2016-03-23 21:37:44 [8915] [INFO] Parent changed, shutting down: <Worker 8915>
+2016-03-23 21:37:44 [8915] [INFO] Worker exiting (pid: 8915)
+2016-03-24 00:38:11 [8934] [INFO] Starting gunicorn 17.5
+2016-03-24 00:38:11 [8934] [DEBUG] Arbiter booted
+2016-03-24 00:38:11 [8934] [INFO] Listening at: http://0.0.0.0:8000 (8934)
+2016-03-24 00:38:11 [8934] [INFO] Using worker: sync
+2016-03-24 00:38:11 [8939] [INFO] Booting worker with pid: 8939
+2016-03-23 21:38:20 [8939] [DEBUG] GET /ask/
+2016-03-23 21:38:20 [8939] [DEBUG] GET /question/56
+Not Found: /question/56
+2016-03-23 21:38:20 [8939] [DEBUG] GET /question/56/
+/usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
+  "unable to load templates.", RemovedInDjango110Warning)
+
+2016-03-23 21:48:03 [8939] [DEBUG] GET /ask/
+2016-03-23 21:48:03 [8939] [DEBUG] GET /question/57
+Not Found: /question/57
+2016-03-23 21:48:03 [8939] [DEBUG] GET /question/57/
+2016-03-23 21:49:03 [8939] [DEBUG] GET /answer/
+Internal Server Error: /answer/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 76, in answer
+    if form.is_valid():
+NameError: global name 'quest' is not defined
+2016-03-23 21:49:48 [8939] [INFO] Parent changed, shutting down: <Worker 8939>
+2016-03-23 21:49:48 [8939] [INFO] Worker exiting (pid: 8939)
+2016-03-24 00:49:56 [9116] [INFO] Starting gunicorn 17.5
+2016-03-24 00:49:56 [9116] [DEBUG] Arbiter booted
+2016-03-24 00:49:56 [9116] [INFO] Listening at: http://0.0.0.0:8000 (9116)
+2016-03-24 00:49:56 [9116] [INFO] Using worker: sync
+2016-03-24 00:49:56 [9121] [INFO] Booting worker with pid: 9121
+2016-03-23 21:50:06 [9121] [DEBUG] GET /answer/
+Internal Server Error: /answer/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 374, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/ask/urls.py", line 4, in <module>
+    from qa.views import *
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 83
+    
+    ^
+IndentationError: unexpected unindent
+2016-03-23 21:51:01 [9121] [DEBUG] GET /answer/
+Internal Server Error: /answer/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 74, in answer
+    form = AnswerForm(request.Get)
+AttributeError: 'WSGIRequest' object has no attribute 'Get'
+2016-03-23 21:51:27 [9121] [DEBUG] GET /answer/
+Internal Server Error: /answer/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 74, in answer
+    form = AnswerForm(request.GET)
+AttributeError: 'WSGIRequest' object has no attribute 'Get'
+2016-03-23 21:51:28 [9121] [DEBUG] GET /answer/
+Internal Server Error: /answer/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 74, in answer
+    form = AnswerForm(request.GET)
+AttributeError: 'WSGIRequest' object has no attribute 'Get'
+2016-03-23 21:51:29 [9121] [DEBUG] GET /answer/
+Internal Server Error: /answer/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 74, in answer
+    form = AnswerForm(request.GET)
+AttributeError: 'WSGIRequest' object has no attribute 'Get'
+2016-03-23 21:51:42 [9121] [DEBUG] GET /answer/
+Internal Server Error: /answer/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 74, in answer
+    form = AnswerForm(request.GET)
+AttributeError: 'WSGIRequest' object has no attribute 'Get'
+2016-03-24 00:51:52 [9401] [INFO] Starting gunicorn 17.5
+2016-03-24 00:51:52 [9401] [ERROR] Connection in use: ('0', 8000)
+2016-03-24 00:51:52 [9401] [ERROR] Retrying in 1 second.
+2016-03-24 00:51:53 [9401] [ERROR] Connection in use: ('0', 8000)
+2016-03-24 00:51:53 [9401] [ERROR] Retrying in 1 second.
+2016-03-24 00:51:54 [9401] [ERROR] Connection in use: ('0', 8000)
+2016-03-24 00:51:54 [9401] [ERROR] Retrying in 1 second.
+2016-03-24 00:51:55 [9401] [ERROR] Connection in use: ('0', 8000)
+2016-03-24 00:51:55 [9401] [ERROR] Retrying in 1 second.
+2016-03-24 00:51:56 [9401] [ERROR] Connection in use: ('0', 8000)
+2016-03-24 00:51:56 [9401] [ERROR] Retrying in 1 second.
+2016-03-23 21:51:57 [9121] [INFO] Parent changed, shutting down: <Worker 9121>
+2016-03-23 21:51:57 [9121] [INFO] Worker exiting (pid: 9121)
+2016-03-24 00:51:57 [9401] [ERROR] Can't connect to ('0', 8000)
+2016-03-24 00:52:06 [9415] [INFO] Starting gunicorn 17.5
+2016-03-24 00:52:06 [9415] [DEBUG] Arbiter booted
+2016-03-24 00:52:06 [9415] [INFO] Listening at: http://0.0.0.0:8000 (9415)
+2016-03-24 00:52:06 [9415] [INFO] Using worker: sync
+2016-03-24 00:52:06 [9420] [INFO] Booting worker with pid: 9420
+2016-03-23 21:52:09 [9420] [DEBUG] GET /answer/
+2016-03-23 21:52:10 [9420] [DEBUG] GET /question/1
+Not Found: /question/1
+2016-03-23 21:52:10 [9420] [DEBUG] GET /question/1/
+/usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
+  "unable to load templates.", RemovedInDjango110Warning)
+

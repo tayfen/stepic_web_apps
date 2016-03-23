@@ -42,6 +42,8 @@ sudo /etc/init.d/nginx restart
 
 #gunicorn_django -c /home/tayfen/develop/stepic/web_apps/web/etc/gunicorn.conf
 
+gunicorn ask.wsgi:application -c /home/tayfen/develop/stepic/web_apps/web/etc/gunicorn.conf
+
 
 #mysql
 #use ask

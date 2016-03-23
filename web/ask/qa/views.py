@@ -65,24 +65,16 @@ def ask(request):
         form = AskForm(request.GET)
         if form.is_valid():
             post = form.save()
-            url = post.get_url()
+            url = post._get_url()
             return HttpResponseRedirect(url)
         else:
             raise Http404('bad form')
 
 def answer(request):
-    try:
-        form = AnswerForm()
-        q = Question.objects.get(id=quest)
-        answers = q.answer_set.all()
-        #answers = Answer.objects.all().filter(question_id=quest)
-        #answers = Answer.objects.select_related(q)
-        return render(request, 'qa/question.html', {
-        'question' : q,
-        'answers' : answers,
-        'form' : form,
-        })
-    except Question.DoesNotExist:
-        raise Http404('no such question')
-    return HttpResponse('HTTP 404 quest')
-
+    form = AnswerForm(request.GET)
+    if form.is_valid():
+        post = form.save()
+        url = post._get_url()
+        return HttpResponseRedirect(url)
+    else:
+        raise Http404('bad form')
