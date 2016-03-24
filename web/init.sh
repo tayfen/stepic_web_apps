@@ -1,3 +1,5 @@
+https://github.com/skolomiiets/ask
+
 #! /bin/sh
 #export STEPIC_WEBAPPS=/home/tayfen/stepic/web_apps/web
 
@@ -30,11 +32,12 @@ mysql -u root -e "create database ask;"
 python manage.py syncdb
 
 #curl post
-curl --data "title=value1&text=value2" http://127.0.0.1
+curl --data "title=value1&text=value2" http://127.0.0.1/ask/
 
 sudo rm /etc/nginx/sites-enabled/default
 #sudo rm /etc/gunicorn.d/*.example
 sudo ﻿ln -sf /home/box/web/etc/nginx.conf /etc/nginx/sites-enabled/test.conf
+sudo ﻿cp /home/box/web/etc/nginx.conf /etc/nginx/sites-enabled/test.conf
 sudo /etc/init.d/nginx restart
 #sudo ln -sf /home/box/web/etc/gunicorn.conf /etc/gunicorn.d/test
 #sudo /etc/init.d/gunicorn restart

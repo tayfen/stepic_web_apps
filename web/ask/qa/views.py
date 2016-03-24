@@ -66,9 +66,12 @@ def ask(request):
         if form.is_valid():
             post = form.save()
             url = post._get_url()
+            #return HttpResponse('dsa')
             return HttpResponseRedirect(url)
+            #return HttpResponseRedirect("http://127.0.0.1")
         else:
-            raise Http404('bad form')
+            return HttpResponseRedirect("http://127.0.0.1/question/1/")
+            #raise Http404('bad form')
 
 def answer(request):
     form = AnswerForm(request.POST)
