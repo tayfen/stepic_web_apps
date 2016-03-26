@@ -76,9 +76,9 @@ def ask(request):
         #else:
             #return HttpResponseRedirect("http://127.0.0.1/question/1/")
             #raise Http404('bad form')
-        return render(request, 'qa/ask.html', {
-        'form' : form,
-        })
+    return render(request, 'qa/ask.html', {
+    'form' : form,
+    })
 
 
 @csrf_protect

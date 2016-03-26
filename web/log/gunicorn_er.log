@@ -2000,3 +2000,42 @@ OperationalError: (1054, "Unknown column 'qa_question.author_id' in 'field list'
   "unable to load templates.", RemovedInDjango110Warning)
 
 2016-03-26 22:53:40 [8667] [DEBUG] GET /question/89/
+2016-03-26 22:57:05 [8667] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view qa.views.ask didn't return an HttpResponse object. It returned None instead.
+2016-03-26 22:58:24 [8667] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view qa.views.ask didn't return an HttpResponse object. It returned None instead.
+2016-03-26 22:58:24 [8667] [DEBUG] GET /favicon.ico
+Not Found: /favicon.ico
+2016-03-26 22:58:25 [8667] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view qa.views.ask didn't return an HttpResponse object. It returned None instead.
+2016-03-26 22:58:25 [8667] [DEBUG] GET /favicon.ico
+Not Found: /favicon.ico
+2016-03-26 22:58:26 [8667] [DEBUG] GET /ask/
+Internal Server Error: /ask/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 158, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view qa.views.ask didn't return an HttpResponse object. It returned None instead.
+2016-03-26 22:58:26 [8667] [DEBUG] GET /favicon.ico
+Not Found: /favicon.ico
+2016-03-27 01:58:42 [8713] [INFO] Starting gunicorn 17.5
+2016-03-27 01:58:42 [8713] [DEBUG] Arbiter booted
+2016-03-27 01:58:42 [8713] [INFO] Listening at: http://0.0.0.0:8000 (8713)
+2016-03-27 01:58:42 [8713] [INFO] Using worker: sync
+2016-03-27 01:58:42 [8718] [INFO] Booting worker with pid: 8718
+2016-03-26 22:58:45 [8718] [DEBUG] GET /ask/
+/usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
+  "unable to load templates.", RemovedInDjango110Warning)
+
