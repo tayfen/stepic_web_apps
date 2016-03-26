@@ -1988,3 +1988,15 @@ OperationalError: (1054, "Unknown column 'qa_question.author_id' in 'field list'
 /usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
   "unable to load templates.", RemovedInDjango110Warning)
 
+2016-03-26 22:53:22 [8562] [INFO] Parent changed, shutting down: <Worker 8562>
+2016-03-26 22:53:22 [8562] [INFO] Worker exiting (pid: 8562)
+2016-03-27 01:53:29 [8662] [INFO] Starting gunicorn 17.5
+2016-03-27 01:53:29 [8662] [DEBUG] Arbiter booted
+2016-03-27 01:53:29 [8662] [INFO] Listening at: http://0.0.0.0:8000 (8662)
+2016-03-27 01:53:29 [8662] [INFO] Using worker: sync
+2016-03-27 01:53:29 [8667] [INFO] Booting worker with pid: 8667
+2016-03-26 22:53:38 [8667] [DEBUG] GET /question/89/
+/usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
+  "unable to load templates.", RemovedInDjango110Warning)
+
+2016-03-26 22:53:40 [8667] [DEBUG] GET /question/89/

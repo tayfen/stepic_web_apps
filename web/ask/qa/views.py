@@ -63,9 +63,6 @@ def ask(request):
     if request.method == "GET":
     #if request.method == "POST":
         form = AskForm()
-        return render(request, 'qa/ask.html', {
-        'form' : form,
-        })
     else:
         form = AskForm(request.POST)
         #author = User(id=1)
@@ -79,6 +76,9 @@ def ask(request):
         #else:
             #return HttpResponseRedirect("http://127.0.0.1/question/1/")
             #raise Http404('bad form')
+        return render(request, 'qa/ask.html', {
+        'form' : form,
+        })
 
 
 @csrf_protect
