@@ -36,6 +36,7 @@ def pop(request):
         'page': page,
     })
 
+@csrf_protect
 def question(request, quest=0):
     try:
         form = AnswerForm()
@@ -52,6 +53,7 @@ def question(request, quest=0):
         raise Http404('no such question')
     return HttpResponse('HTTP 404 quest')
 
+@csrf_protect
 def ask(request):
     if request.method == "GET":
     #if request.method == "POST":
@@ -73,6 +75,7 @@ def ask(request):
             return HttpResponseRedirect("http://127.0.0.1/question/1/")
             #raise Http404('bad form')
 
+@csrf_protect
 def answer(request):
     form = AnswerForm(request.POST)
     if form.is_valid():

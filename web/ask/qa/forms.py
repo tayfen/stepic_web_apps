@@ -31,9 +31,20 @@ class AskForm(forms.Form):
 #text = forms.CharField(widget=forms.Textarea)
 #title = forms.CharField(widget=forms.Textarea, max_length=100)
 
-class AnswerForm(ModelForm):
-    class Meta:
-        model = Answer
-        fields = ['text', 'question']
+#class AnswerForm(ModelForm):
+#    class Meta:
+#        model = Answer
+#        fields = ['text', 'question']
 #text = forms.CharField(widget=forms.Textarea)
 #question = forms.CharField()
+
+
+class AnswerForm(forms.Form):
+    text = forms.CharField(max_length=100)
+    question = forms.IntegerField()
+    hidden = forms.CharField(widget=forms.HiddenInput())
+
+    def save(self):
+        answer = Answer(**self.cleaned_data)
+        answer.save()
+        return answer

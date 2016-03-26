@@ -311,3 +311,36 @@ Not Found: /question/86
 /usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
   "unable to load templates.", RemovedInDjango110Warning)
 
+2016-03-24 04:16:56 [11494] [INFO] Handling signal: term
+Exception SystemExit:  in <module 'threading' from '/usr/lib/python2.7/threading.pyc'> ignored
+Error in atexit._run_exitfuncs:
+Exception SystemExit: 0 in <module 'threading' from '/usr/lib/python2.7/threading.pyc'> ignored
+2016-03-24 04:16:59 [11494] [INFO] Shutting down: Master
+2016-03-26 23:07:30 [6833] [INFO] Starting gunicorn 17.5
+2016-03-26 23:07:30 [6833] [DEBUG] Arbiter booted
+2016-03-26 23:07:30 [6833] [INFO] Listening at: http://0.0.0.0:8000 (6833)
+2016-03-26 23:07:30 [6833] [INFO] Using worker: sync
+2016-03-26 23:07:30 [6838] [INFO] Booting worker with pid: 6838
+2016-03-26 20:09:38 [6838] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
+  "unable to load templates.", RemovedInDjango110Warning)
+
+2016-03-26 20:25:45 [6838] [DEBUG] GET /
+2016-03-26 20:25:46 [6838] [DEBUG] GET /favicon.ico
+Not Found: /favicon.ico
+2016-03-26 20:27:18 [6838] [DEBUG] GET /ask/
+2016-03-26 20:27:28 [6838] [DEBUG] POST /ask/
+2016-03-26 20:27:29 [6838] [DEBUG] GET /question/87
+Not Found: /question/87
+2016-03-26 20:27:29 [6838] [DEBUG] GET /question/87/
+2016-03-26 20:28:43 [6838] [DEBUG] GET /question/1/
+2016-03-26 20:28:44 [6838] [DEBUG] GET /favicon.ico
+Not Found: /favicon.ico
+2016-03-26 20:29:03 [6838] [DEBUG] GET /question/12/
+2016-03-26 20:29:36 [6838] [DEBUG] GET /answer
+Not Found: /answer
+2016-03-26 20:29:36 [6838] [DEBUG] GET /answer/
+Not Found: /answer/
+2016-03-26 20:31:18 [6838] [DEBUG] GET /question/87/
+2016-03-26 20:31:19 [6838] [DEBUG] GET /question/87/
+2016-03-26 20:31:20 [6838] [DEBUG] GET /question/87/

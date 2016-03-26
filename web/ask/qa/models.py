@@ -16,6 +16,11 @@ class Question(models.Model):
 
     def _get_url(self):
         return "http://127.0.0.1/question/%s" % (self.id)
+        
+    def __unicode__(self):              
+        return self.title
+    
+    
 
 class Answer(models.Model):
     text = models.TextField()
@@ -27,4 +32,6 @@ class Answer(models.Model):
     def _get_url(self):
         return "http://127.0.0.1/question/%s" % (self.question.id)
 
-	
+    def __unicode__(self):              
+        return self.text
+

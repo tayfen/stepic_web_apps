@@ -1,17 +1,14 @@
-<ul class ="pagination">
-{% for q in posts %}
-    <li>
-        <a href ="/question/{{ q.id}}/">{{ q.title }}</a>
-    </li>
-{% endfor %}
-{% for p in paginator.page_range %}
-    {% if p.number == page.number %}
-    <li class = "active">
-    {% else %}
-    <li>
-    {% endif %}
-        <a href ="{{ paginator.baseurl }}{{ p }}">{{ p }}</a>
-    </li>
-{% endfor %}
-<!-- <li>{{ question.title }} - {{ question.text }}</a></li> -->
+<h1>Question details</h1>
+<!DOCTYPE HTML>
+<html
+<head><title>QUESTION</title></head>
+<body>
+<h1>Question title: {{ question.title }}</h1>
+<h1>Question text: {{ question.text }}</h1>
+<h1>Answers:</h1>
+<ul>
+    {% for answer in answers.all %}
+<li>{{ answer.text }}</li>
+    {% endfor %}
 </ul>
+

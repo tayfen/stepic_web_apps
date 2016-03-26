@@ -36,7 +36,7 @@ curl --data "title=value1&text=value2" http://127.0.0.1/ask/
 
 sudo rm /etc/nginx/sites-enabled/default
 #sudo rm /etc/gunicorn.d/*.example
-sudo ﻿ln -sf /home/box/web/etc/nginx.conf /etc/nginx/sites-enabled/test.conf
+sudo ln -sf /home/box/web/etc/nginx.conf /etc/nginx/sites-enabled/test.conf
 sudo ﻿cp /home/box/web/etc/nginx.conf /etc/nginx/sites-enabled/test.conf
 sudo /etc/init.d/nginx restart
 #sudo ln -sf /home/box/web/etc/gunicorn.conf /etc/gunicorn.d/test
