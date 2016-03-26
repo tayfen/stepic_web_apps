@@ -1669,3 +1669,175 @@ NameError: name 'csrf_protect' is not defined
 
 2016-03-26 21:07:58 [7683] [DEBUG] GET /favicon.ico
 Not Found: /favicon.ico
+2016-03-26 21:13:01 [7683] [DEBUG] POST /ask/
+2016-03-26 21:13:02 [7683] [DEBUG] GET /question/88
+Not Found: /question/88
+2016-03-26 21:13:02 [7683] [DEBUG] GET /question/88/
+2016-03-26 21:13:28 [7683] [DEBUG] GET /ask/
+2016-03-26 21:13:33 [7683] [DEBUG] POST /ask/
+2016-03-26 21:13:33 [7683] [DEBUG] GET /question/89
+Not Found: /question/89
+2016-03-26 21:13:33 [7683] [DEBUG] GET /question/89/
+2016-03-27 00:36:14 [7836] [INFO] Starting gunicorn 17.5
+2016-03-27 00:36:14 [7836] [DEBUG] Arbiter booted
+2016-03-27 00:36:14 [7836] [INFO] Listening at: http://0.0.0.0:8000 (7836)
+2016-03-27 00:36:14 [7836] [INFO] Using worker: sync
+2016-03-27 00:36:14 [7841] [INFO] Booting worker with pid: 7841
+2016-03-26 21:36:23 [7841] [DEBUG] GET /question/89/
+Internal Server Error: /question/89/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 45, in question
+    form = AnswerForm(initial={'question': question_id})
+NameError: global name 'question_id' is not defined
+2016-03-27 00:37:05 [7847] [INFO] Starting gunicorn 17.5
+
+Error: Already running on PID 7847 (or pid file '/home/tayfen/develop/stepic/web_apps/web/gunicorn.pid' is stale)
+
+2016-03-26 21:37:09 [7841] [DEBUG] GET /question/89/
+Internal Server Error: /question/89/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 45, in question
+    form = AnswerForm(initial={'question': quest})
+NameError: global name 'question_id' is not defined
+2016-03-26 21:37:10 [7841] [DEBUG] GET /question/89/
+Internal Server Error: /question/89/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 45, in question
+    form = AnswerForm(initial={'question': quest})
+NameError: global name 'question_id' is not defined
+2016-03-26 21:37:11 [7841] [DEBUG] GET /question/89/
+Internal Server Error: /question/89/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 45, in question
+    form = AnswerForm(initial={'question': quest})
+NameError: global name 'question_id' is not defined
+2016-03-26 21:37:12 [7841] [DEBUG] GET /question/89/
+Internal Server Error: /question/89/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 45, in question
+    form = AnswerForm(initial={'question': quest})
+NameError: global name 'question_id' is not defined
+2016-03-26 21:37:27 [7841] [INFO] Parent changed, shutting down: <Worker 7841>
+2016-03-26 21:37:27 [7841] [INFO] Worker exiting (pid: 7841)
+2016-03-27 00:37:36 [7863] [INFO] Starting gunicorn 17.5
+2016-03-27 00:37:36 [7863] [DEBUG] Arbiter booted
+2016-03-27 00:37:36 [7863] [INFO] Listening at: http://0.0.0.0:8000 (7863)
+2016-03-27 00:37:36 [7863] [INFO] Using worker: sync
+2016-03-27 00:37:36 [7868] [INFO] Booting worker with pid: 7868
+2016-03-26 21:37:39 [7868] [DEBUG] GET /question/89/
+Internal Server Error: /question/89/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 46, in question
+    q = get_object_or_404(Question, id=quest)
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 155, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 381, in get
+    num = len(clone)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 240, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 1074, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 52, in __iter__
+    results = compiler.execute_sql()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/compiler.py", line 848, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/mysql/base.py", line 112, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'qa_question.author' in 'field list'")
+2016-03-26 21:37:41 [7868] [DEBUG] GET /question/89/
+Internal Server Error: /question/89/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 46, in question
+    q = get_object_or_404(Question, id=quest)
+  File "/usr/local/lib/python2.7/dist-packages/django/shortcuts.py", line 155, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 381, in get
+    num = len(clone)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 240, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 1074, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 52, in __iter__
+    results = compiler.execute_sql()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/compiler.py", line 848, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/mysql/base.py", line 112, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'qa_question.author' in 'field list'")
+2016-03-26 21:39:26 [7868] [INFO] Parent changed, shutting down: <Worker 7868>
+2016-03-26 21:39:26 [7868] [INFO] Worker exiting (pid: 7868)
+2016-03-27 00:39:37 [7903] [INFO] Starting gunicorn 17.5
+2016-03-27 00:39:37 [7903] [DEBUG] Arbiter booted
+2016-03-27 00:39:37 [7903] [INFO] Listening at: http://0.0.0.0:8000 (7903)
+2016-03-27 00:39:37 [7903] [INFO] Using worker: sync
+2016-03-27 00:39:37 [7908] [INFO] Booting worker with pid: 7908
+2016-03-26 21:39:43 [7908] [DEBUG] GET /question/89/
+/usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
+  "unable to load templates.", RemovedInDjango110Warning)
+

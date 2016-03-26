@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Answer, Question, User
 from django.core.paginator import Paginator
 from .forms import AnswerForm, AskForm
@@ -39,9 +39,11 @@ def pop(request):
 
 @csrf_protect
 def question(request, quest=0):
+    if request.method == "POST":
+        return ask(request)
     try:
-        form = AnswerForm()
-        q = Question.objects.get(id=quest)
+        form = AnswerForm(initial={'question': quest})
+        q = get_object_or_404(Question, id=quest)
         answers = q.answer_set.all()
         #answers = Answer.objects.all().filter(question_id=quest)
         #answers = Answer.objects.select_related(q)
