@@ -39,10 +39,11 @@ def pop(request):
 
 @csrf_protect
 def question(request, quest=0):
-    if request.method == "POST":
-        return ask(request)
+    #if request.method == "POST":
+    #    return ask(request)
     try:
-        form = AnswerForm(initial={'question': quest})
+        #form = AnswerForm(initial={'question': quest})
+        form = AnswerForm()
         q = get_object_or_404(Question, id=quest)
         answers = q.answer_set.all()
         #answers = Answer.objects.all().filter(question_id=quest)

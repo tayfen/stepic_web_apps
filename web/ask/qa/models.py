@@ -21,7 +21,6 @@ class Question(models.Model):
     def __unicode__(self):              
         return self.title
     
-    
 
 class Answer(models.Model):
     text = models.TextField()

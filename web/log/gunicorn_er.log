@@ -1841,3 +1841,79 @@ OperationalError: (1054, "Unknown column 'qa_question.author' in 'field list'")
 /usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
   "unable to load templates.", RemovedInDjango110Warning)
 
+2016-03-27 00:56:15 [8129] [INFO] Starting gunicorn 17.5
+2016-03-27 00:56:15 [8129] [DEBUG] Arbiter booted
+2016-03-27 00:56:15 [8129] [INFO] Listening at: http://0.0.0.0:8000 (8129)
+2016-03-27 00:56:15 [8129] [INFO] Using worker: sync
+2016-03-27 00:56:15 [8134] [INFO] Booting worker with pid: 8134
+2016-03-27 00:56:15 [8134] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 473, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/base.py", line 115, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 33, in load
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/dist-packages/gunicorn/util.py", line 362, in import_app
+    __import__(module)
+ImportError: No module named ask.wsgi
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 473, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/base.py", line 115, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 33, in load
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/dist-packages/gunicorn/util.py", line 362, in import_app
+    __import__(module)
+ImportError: No module named ask.wsgi
+2016-03-27 00:56:15 [8134] [INFO] Worker exiting (pid: 8134)
+2016-03-27 00:56:15 [8129] [INFO] Shutting down: Master
+2016-03-27 00:56:15 [8129] [INFO] Reason: Worker failed to boot.
+2016-03-27 00:56:31 [8142] [INFO] Starting gunicorn 17.5
+2016-03-27 00:56:31 [8142] [DEBUG] Arbiter booted
+2016-03-27 00:56:31 [8142] [INFO] Listening at: http://0.0.0.0:8000 (8142)
+2016-03-27 00:56:31 [8142] [INFO] Using worker: sync
+2016-03-27 00:56:31 [8147] [INFO] Booting worker with pid: 8147
+2016-03-27 00:56:31 [8147] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 473, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/base.py", line 115, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 33, in load
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/dist-packages/gunicorn/util.py", line 362, in import_app
+    __import__(module)
+ImportError: No module named ask.wsgi
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 473, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 100, in init_process
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/base.py", line 115, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 33, in load
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/dist-packages/gunicorn/util.py", line 362, in import_app
+    __import__(module)
+ImportError: No module named ask.wsgi
+2016-03-27 00:56:31 [8147] [INFO] Worker exiting (pid: 8147)
+2016-03-27 00:56:31 [8142] [INFO] Shutting down: Master
+2016-03-27 00:56:31 [8142] [INFO] Reason: Worker failed to boot.
+2016-03-27 00:56:51 [8156] [INFO] Starting gunicorn 17.5
+2016-03-27 00:56:51 [8156] [DEBUG] Arbiter booted
+2016-03-27 00:56:51 [8156] [INFO] Listening at: http://0.0.0.0:8000 (8156)
+2016-03-27 00:56:51 [8156] [INFO] Using worker: sync
+2016-03-27 00:56:51 [8161] [INFO] Booting worker with pid: 8161
+2016-03-26 21:56:54 [8161] [DEBUG] GET /question/89/
+/usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
+  "unable to load templates.", RemovedInDjango110Warning)
+
+2016-03-26 21:56:57 [8161] [DEBUG] GET /question/89/
