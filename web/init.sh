@@ -5,6 +5,8 @@ https://github.com/skolomiiets/ask
 
 #sudo kill -9 $(cat /home/tayfen/develop/stepic/web_apps/web/gunicorn.pid)
 
+sudo kill -9 $(cat /home/box/web/gunicorn.pid) 
+
 # автозаполнение
 #pip install django-autofixture
 #python manage.py shell < init_db.py

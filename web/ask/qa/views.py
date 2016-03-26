@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .models import Answer, Question, User
 from django.core.paginator import Paginator
 from .forms import AnswerForm, AskForm
+from django.views.decorators.csrf import csrf_protect, csrf_exempt
 
 # Create your views here.
 
@@ -58,9 +59,6 @@ def ask(request):
     if request.method == "GET":
     #if request.method == "POST":
         form = AskForm()
-        return render(request, 'qa/ask.html', {
-        'form' : form,
-        })
     else:
         form = AskForm(request.POST)
         #author = User(id=1)
@@ -71,9 +69,12 @@ def ask(request):
             #return HttpResponse('dsa')
             return HttpResponseRedirect(url)
             #return HttpResponseRedirect("http://127.0.0.1")
-        else:
-            return HttpResponseRedirect("http://127.0.0.1/question/1/")
+        #else:
+            #return HttpResponseRedirect("http://127.0.0.1/question/1/")
             #raise Http404('bad form')
+    return render(request, 'qa/ask.html', {
+        'form' : form,
+        })
 
 @csrf_protect
 def answer(request):
