@@ -44,7 +44,8 @@ def question(request, quest=0):
     try:
         #form = AnswerForm(initial={'question': quest})
         form = AnswerForm()
-        q = get_object_or_404(Question, id=quest)
+        q = Question.objects.get(id=quest)
+        #q = Question.objects.all().filter(id=quest)
         answers = q.answer_set.all()
         #answers = Answer.objects.all().filter(question_id=quest)
         #answers = Answer.objects.select_related(q)
@@ -62,6 +63,9 @@ def ask(request):
     if request.method == "GET":
     #if request.method == "POST":
         form = AskForm()
+        return render(request, 'qa/ask.html', {
+        'form' : form,
+        })
     else:
         form = AskForm(request.POST)
         #author = User(id=1)
@@ -75,9 +79,7 @@ def ask(request):
         #else:
             #return HttpResponseRedirect("http://127.0.0.1/question/1/")
             #raise Http404('bad form')
-    return render(request, 'qa/ask.html', {
-        'form' : form,
-        })
+
 
 @csrf_protect
 def answer(request):

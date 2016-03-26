@@ -1917,3 +1917,74 @@ ImportError: No module named ask.wsgi
   "unable to load templates.", RemovedInDjango110Warning)
 
 2016-03-26 21:56:57 [8161] [DEBUG] GET /question/89/
+2016-03-27 01:17:54 [8317] [INFO] Starting gunicorn 17.5
+2016-03-27 01:17:54 [8317] [DEBUG] Arbiter booted
+2016-03-27 01:17:54 [8317] [INFO] Listening at: http://0.0.0.0:8000 (8317)
+2016-03-27 01:17:54 [8317] [INFO] Using worker: sync
+2016-03-27 01:17:54 [8322] [INFO] Booting worker with pid: 8322
+2016-03-26 22:18:05 [8322] [DEBUG] GET /question/89/
+Internal Server Error: /question/89/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 48, in question
+    answers = q.answer_set.all()
+AttributeError: 'QuerySet' object has no attribute 'answer_set'
+2016-03-26 22:28:21 [8322] [INFO] Parent changed, shutting down: <Worker 8322>
+2016-03-26 22:28:21 [8322] [INFO] Worker exiting (pid: 8322)
+2016-03-27 01:28:28 [8523] [INFO] Starting gunicorn 17.5
+2016-03-27 01:28:28 [8523] [DEBUG] Arbiter booted
+2016-03-27 01:28:28 [8523] [INFO] Listening at: http://0.0.0.0:8000 (8523)
+2016-03-27 01:28:28 [8523] [INFO] Using worker: sync
+2016-03-27 01:28:28 [8528] [INFO] Booting worker with pid: 8528
+2016-03-26 22:28:43 [8528] [DEBUG] GET /question/89/
+Internal Server Error: /question/89/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 47, in question
+    q = Question.objects.get(id=quest)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 381, in get
+    num = len(clone)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 240, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 1074, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 52, in __iter__
+    results = compiler.execute_sql()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/compiler.py", line 848, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/mysql/base.py", line 112, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'qa_question.author_id' in 'field list'")
+2016-03-27 01:29:32 [8557] [INFO] Starting gunicorn 17.5
+2016-03-27 01:29:32 [8557] [DEBUG] Arbiter booted
+2016-03-27 01:29:32 [8557] [INFO] Listening at: http://0.0.0.0:8000 (8557)
+2016-03-27 01:29:32 [8557] [INFO] Using worker: sync
+2016-03-27 01:29:32 [8562] [INFO] Booting worker with pid: 8562
+2016-03-26 22:29:36 [8562] [DEBUG] GET /question/89/
+/usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
+  "unable to load templates.", RemovedInDjango110Warning)
+

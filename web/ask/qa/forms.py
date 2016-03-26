@@ -42,7 +42,7 @@ class AskForm(forms.Form):
 class AnswerForm(forms.Form):
     text = forms.CharField(max_length=100)
     question = forms.IntegerField()
-    hidden = forms.CharField(widget=forms.HiddenInput())
+    #hidden = forms.CharField(widget=forms.HiddenInput())
 
     def save(self):
         answer = Answer(**self.cleaned_data)
