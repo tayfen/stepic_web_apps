@@ -11,9 +11,9 @@ class Question(models.Model):
     text = models.TextField()
     added_at = models.DateField(auto_now_add=True)
     rating = models.IntegerField(default=0)
-    #author = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
+    author = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
     #author = models.CharField(max_length=20)
-    author = models.ForeignKey(User, on_delete=models.CASCADE, default=1)
+    #author = models.ForeignKey(User, on_delete=models.CASCADE, default=1)
     likes = models.ManyToManyField(User, related_name='likes_set', null=True)
 
     def _get_url(self):
@@ -28,8 +28,8 @@ class Answer(models.Model):
     added_at = models.DateField(auto_now_add=True)
     #, default=1
     question = models.ForeignKey(Question, on_delete=models.CASCADE, null=True)
-    #author = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
-    author = models.ForeignKey(User, on_delete=models.CASCADE, default=1)
+    author = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
+    #author = models.ForeignKey(User, on_delete=models.CASCADE, default=1)
     #author = models.CharField(max_length=20)
     
     def _get_url(self):

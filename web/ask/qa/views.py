@@ -1,8 +1,9 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Answer, Question, User
 from django.core.paginator import Paginator
-from .forms import AnswerForm, AskForm
+from .forms import AnswerForm, AskForm, SignForm, LogForm
 from django.views.decorators.csrf import csrf_protect, csrf_exempt
+from django.contrib.auth import login, authenticate
 
 # Create your views here.
 
@@ -65,6 +66,7 @@ def ask(request):
         form = AskForm()
     else:
         form = AskForm(request.POST)
+        form.author = request.user
         #author = User(id=1)
         #form = AskForm(request.GET)
         if form.is_valid():
@@ -80,13 +82,64 @@ def ask(request):
     'form' : form,
     })
 
-
 @csrf_protect
 def answer(request):
     form = AnswerForm(request.POST)
+    form.author = request.user
     if form.is_valid():
         post = form.save()
         url = post._get_url()
         return HttpResponseRedirect(url)
     else:
         raise Http404('bad form')
+
+@csrf_protect
+def signup(request):
+    if request.method == "GET":
+    #if request.method == "POST":
+        form = SignForm()
+    else:
+        form = SignForm(request.POST)
+        if form.is_valid():
+            post = form.save()
+            if post:
+                user = authenticate(username=post.username, password=post.password)
+                login(request, user)
+            #url = post._get_url()
+            #return HttpResponse('dsa')
+            #return HttpResponseRedirect(url)
+            return HttpResponseRedirect("http://127.0.0.1")
+        #else:
+            #return HttpResponseRedirect("http://127.0.0.1/question/1/")
+            #raise Http404('bad form')
+    return render(request, 'qa/signup.html', {
+    'form' : form,
+    })
+
+
+@csrf_protect
+def login_user(request):
+    if request.method == "GET":
+    #if request.method == "POST":
+        form = LogForm()
+    else:
+        form = LogForm(request.POST)
+        if form.is_valid():
+            post = form.save()
+            user = authenticate(username=post.username, password=post.password)
+            if user is not None:
+                if user.is_active:
+                    login(request, user)
+                    return HttpResponseRedirect("http://127.0.0.1")
+            else:
+                return HttpResponseRedirect("http://127.0.0.1")
+            #post = form.save()
+            #url = post._get_url()
+            #return HttpResponse('dsa')
+            #return HttpResponseRedirect(url)
+        #else:
+            #return HttpResponseRedirect("http://127.0.0.1/question/1/")
+            #raise Http404('bad form')
+    return render(request, 'qa/login.html', {
+    'form' : form,
+    })

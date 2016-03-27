@@ -2,6 +2,29 @@ from django import forms
 from django.forms import ModelForm
 from .models import Question, Answer, User
 
+class LogForm(forms.Form):
+    username = forms.CharField(max_length=20)
+    password = forms.CharField(max_length=20)
+
+    def save(self):
+        user = User(**self.cleaned_data)
+        return user
+    
+
+class SignForm(forms.Form):
+    username = forms.CharField(max_length=20)
+    email = forms.EmailField(widget=forms.Textarea, help_text = 'valid email, please')
+    password = forms.CharField(max_length=20)
+
+    def save(self):
+        user = User(**self.cleaned_data)
+        try:
+            user1 = User.objects.get(username=user.username)
+            return None
+        except User.DoesNotExist:
+            user.save()
+            return user
+            
 class AskForm(forms.Form):
     title = forms.CharField(max_length=100)
     text = forms.CharField(widget=forms.Textarea)

@@ -8,8 +8,8 @@ admin.autodiscover()
 urlpatterns = [
     # Examples:
     url(r"^$", top),
-    url(r"^login/.*$", top),
-    url(r"^signup/.*$", test),
+    url(r"^login/.*$", login_user),
+    url(r"^signup/.*$", signup),
     url(r"^ask/.*$", ask),
     url(r"^answer/.*$", answer),
     url(r"^popular/.*$", pop),

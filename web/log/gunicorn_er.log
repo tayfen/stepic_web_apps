@@ -2039,3 +2039,667 @@ Not Found: /favicon.ico
 /usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
   "unable to load templates.", RemovedInDjango110Warning)
 
+2016-03-26 23:27:42 [8718] [INFO] Worker exiting (pid: 8718)
+2016-03-27 02:27:43 [8713] [INFO] Handling signal: term
+2016-03-27 02:27:44 [8713] [INFO] Shutting down: Master
+2016-03-27 15:00:27 [6514] [INFO] Starting gunicorn 17.5
+2016-03-27 15:00:27 [6514] [DEBUG] Arbiter booted
+2016-03-27 15:00:27 [6514] [INFO] Listening at: http://0.0.0.0:8000 (6514)
+2016-03-27 15:00:27 [6514] [INFO] Using worker: sync
+2016-03-27 15:00:27 [6519] [INFO] Booting worker with pid: 6519
+2016-03-27 12:01:55 [6519] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
+  "unable to load templates.", RemovedInDjango110Warning)
+
+2016-03-27 12:02:06 [6519] [DEBUG] GET /signup/
+2016-03-27 15:04:12 [6550] [INFO] Starting gunicorn 17.5
+2016-03-27 15:04:12 [6550] [DEBUG] Arbiter booted
+2016-03-27 15:04:12 [6550] [INFO] Listening at: http://0.0.0.0:8000 (6550)
+2016-03-27 15:04:12 [6550] [INFO] Using worker: sync
+2016-03-27 15:04:12 [6555] [INFO] Booting worker with pid: 6555
+2016-03-27 12:04:15 [6555] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
+  "unable to load templates.", RemovedInDjango110Warning)
+
+2016-03-27 12:04:19 [6555] [DEBUG] GET /signup/
+2016-03-27 12:04:42 [6555] [DEBUG] GET /ask/
+2016-03-27 12:04:54 [6555] [DEBUG] GET /question/1/
+2016-03-27 12:05:02 [6555] [DEBUG] GET /signup/
+2016-03-27 12:05:21 [6555] [DEBUG] GET /ask/
+2016-03-27 12:05:21 [6555] [DEBUG] GET /favicon.ico
+Not Found: /favicon.ico
+2016-03-27 12:05:28 [6555] [DEBUG] GET /signup/
+2016-03-27 12:06:39 [6555] [DEBUG] GET /signup/
+2016-03-27 12:06:40 [6555] [DEBUG] GET /signup/
+2016-03-27 12:06:40 [6555] [DEBUG] GET /signup/
+2016-03-27 12:06:41 [6555] [DEBUG] GET /signup/
+2016-03-27 12:06:42 [6555] [DEBUG] GET /signup/
+2016-03-27 12:06:43 [6555] [DEBUG] GET /signup/
+2016-03-27 15:07:11 [6648] [INFO] Starting gunicorn 17.5
+2016-03-27 15:07:11 [6648] [DEBUG] Arbiter booted
+2016-03-27 15:07:11 [6648] [INFO] Listening at: http://0.0.0.0:8000 (6648)
+2016-03-27 15:07:11 [6648] [INFO] Using worker: sync
+2016-03-27 15:07:11 [6653] [INFO] Booting worker with pid: 6653
+2016-03-27 12:07:14 [6653] [DEBUG] GET /signup/
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 97, in signup
+    form = SignForm()
+NameError: global name 'SignForm' is not defined
+2016-03-27 12:07:44 [6653] [DEBUG] GET /signup/
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 97, in signup
+    form = SignForm()
+NameError: global name 'SignForm' is not defined
+2016-03-27 12:07:45 [6653] [DEBUG] GET /signup/
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 97, in signup
+    form = SignForm()
+NameError: global name 'SignForm' is not defined
+2016-03-27 12:07:46 [6653] [DEBUG] GET /signup/
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 97, in signup
+    form = SignForm()
+NameError: global name 'SignForm' is not defined
+2016-03-27 12:07:46 [6653] [DEBUG] GET /signup/
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 97, in signup
+    form = SignForm()
+NameError: global name 'SignForm' is not defined
+2016-03-27 12:08:17 [6653] [INFO] Parent changed, shutting down: <Worker 6653>
+2016-03-27 12:08:17 [6653] [INFO] Worker exiting (pid: 6653)
+2016-03-27 15:08:36 [6673] [INFO] Starting gunicorn 17.5
+2016-03-27 15:08:36 [6673] [DEBUG] Arbiter booted
+2016-03-27 15:08:36 [6673] [INFO] Listening at: http://0.0.0.0:8000 (6673)
+2016-03-27 15:08:36 [6673] [INFO] Using worker: sync
+2016-03-27 15:08:36 [6678] [INFO] Booting worker with pid: 6678
+2016-03-27 12:08:39 [6678] [DEBUG] GET /signup/
+/usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
+  "unable to load templates.", RemovedInDjango110Warning)
+
+2016-03-27 12:09:15 [6678] [DEBUG] POST /signup/
+2016-03-27 12:09:15 [6678] [DEBUG] GET /
+2016-03-27 15:25:01 [6711] [INFO] Starting gunicorn 17.5
+2016-03-27 15:25:01 [6711] [DEBUG] Arbiter booted
+2016-03-27 15:25:01 [6711] [INFO] Listening at: http://0.0.0.0:8000 (6711)
+2016-03-27 15:25:01 [6711] [INFO] Using worker: sync
+2016-03-27 15:25:01 [6716] [INFO] Booting worker with pid: 6716
+2016-03-27 15:26:34 [6730] [INFO] Starting gunicorn 17.5
+2016-03-27 15:26:34 [6730] [DEBUG] Arbiter booted
+2016-03-27 15:26:34 [6730] [INFO] Listening at: http://0.0.0.0:8000 (6730)
+2016-03-27 15:26:34 [6730] [INFO] Using worker: sync
+2016-03-27 15:26:34 [6735] [INFO] Booting worker with pid: 6735
+2016-03-27 12:26:40 [6735] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
+  "unable to load templates.", RemovedInDjango110Warning)
+
+2016-03-27 12:26:47 [6735] [DEBUG] GET /signup/
+2016-03-27 12:27:10 [6735] [DEBUG] POST /signup/
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 104, in signup
+    post = form.save()
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/forms.py", line 16, in save
+    user.save()
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/base_user.py", line 74, in save
+    super(AbstractBaseUser, self).save(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 700, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 728, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 812, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 851, in _do_insert
+    using=using, raw=raw)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/mysql/base.py", line 112, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'tay' for key 'username'")
+2016-03-27 12:32:07 [6735] [DEBUG] GET /signup/
+2016-03-27 12:32:09 [6735] [DEBUG] POST /signup/
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 104, in signup
+    post = form.save()
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/forms.py", line 16, in save
+    if !User.objects.get(username=user.username):
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/base_user.py", line 74, in save
+    super(AbstractBaseUser, self).save(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 700, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 728, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 812, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 851, in _do_insert
+    using=using, raw=raw)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/mysql/base.py", line 112, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'tay' for key 'username'")
+2016-03-27 15:32:34 [6751] [INFO] Starting gunicorn 17.5
+2016-03-27 15:32:34 [6751] [DEBUG] Arbiter booted
+2016-03-27 15:32:34 [6751] [INFO] Listening at: http://0.0.0.0:8000 (6751)
+2016-03-27 15:32:34 [6751] [INFO] Using worker: sync
+2016-03-27 15:32:34 [6756] [INFO] Booting worker with pid: 6756
+2016-03-27 12:32:58 [6756] [DEBUG] GET /signup/
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 374, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/ask/urls.py", line 4, in <module>
+    from qa.views import *
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 4, in <module>
+    from .forms import AnswerForm, AskForm, SignForm, LogForm
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/forms.py", line 16
+    if !User.objects.get(username=user.username):
+       ^
+SyntaxError: invalid syntax
+2016-03-27 12:36:37 [6756] [DEBUG] GET /signup/
+/usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
+  "unable to load templates.", RemovedInDjango110Warning)
+
+2016-03-27 12:36:51 [6756] [DEBUG] POST /signup/
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 104, in signup
+    post = form.save()
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/forms.py", line 18, in save
+    user.save()
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/base_user.py", line 74, in save
+    super(AbstractBaseUser, self).save(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 700, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 728, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 812, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 851, in _do_insert
+    using=using, raw=raw)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/mysql/base.py", line 112, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'tay' for key 'username'")
+2016-03-27 12:38:15 [6756] [DEBUG] POST /signup/
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 104, in signup
+    post = form.save()
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/forms.py", line 18, in save
+    return None
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/base_user.py", line 74, in save
+    super(AbstractBaseUser, self).save(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 700, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 728, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 812, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 851, in _do_insert
+    using=using, raw=raw)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/mysql/base.py", line 112, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'tay' for key 'username'")
+2016-03-27 12:38:19 [6756] [DEBUG] GET /signup/
+2016-03-27 12:38:31 [6756] [DEBUG] POST /signup/
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 104, in signup
+    post = form.save()
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/forms.py", line 18, in save
+    return None
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/base_user.py", line 74, in save
+    super(AbstractBaseUser, self).save(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 700, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 728, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 812, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/base.py", line 851, in _do_insert
+    using=using, raw=raw)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 122, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 1039, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/compiler.py", line 1060, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 95, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/mysql/base.py", line 112, in execute
+    return self.cursor.execute(query, args)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 205, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/local/lib/python2.7/dist-packages/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1062, "Duplicate entry 'tay' for key 'username'")
+2016-03-27 15:38:53 [6776] [INFO] Starting gunicorn 17.5
+2016-03-27 15:38:53 [6776] [DEBUG] Arbiter booted
+2016-03-27 15:38:53 [6776] [INFO] Listening at: http://0.0.0.0:8000 (6776)
+2016-03-27 15:38:53 [6776] [INFO] Using worker: sync
+2016-03-27 15:38:53 [6781] [INFO] Booting worker with pid: 6781
+2016-03-27 12:38:58 [6781] [DEBUG] GET /signup/
+/usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
+  "unable to load templates.", RemovedInDjango110Warning)
+
+2016-03-27 12:39:01 [6781] [DEBUG] POST /signup/
+2016-03-27 12:39:01 [6781] [DEBUG] GET /
+2016-03-27 12:39:16 [6781] [DEBUG] POST /signup/
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 107, in signup
+    login(request, user)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+TypeError: login() takes exactly 1 argument (2 given)
+2016-03-27 15:41:45 [6795] [INFO] Starting gunicorn 17.5
+2016-03-27 15:41:45 [6795] [DEBUG] Arbiter booted
+2016-03-27 15:41:45 [6795] [INFO] Listening at: http://0.0.0.0:8000 (6795)
+2016-03-27 15:41:45 [6795] [INFO] Using worker: sync
+2016-03-27 15:41:45 [6800] [INFO] Booting worker with pid: 6800
+2016-03-27 12:41:49 [6800] [DEBUG] POST /signup/
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 374, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/ask/urls.py", line 11, in <module>
+    url(r"^login/.*$", _login),
+NameError: name '_login' is not defined
+2016-03-27 12:43:00 [6800] [DEBUG] POST /signup/
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 134, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 374, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 417, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 33, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/urlresolvers.py", line 410, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/ask/urls.py", line 11, in <module>
+    url(r"^login/.*$", login_user),
+NameError: name 'login_user' is not defined
+2016-03-27 12:43:45 [6800] [INFO] Parent changed, shutting down: <Worker 6800>
+2016-03-27 12:43:45 [6800] [INFO] Worker exiting (pid: 6800)
+2016-03-27 15:43:51 [6815] [INFO] Starting gunicorn 17.5
+2016-03-27 15:43:51 [6815] [DEBUG] Arbiter booted
+2016-03-27 15:43:51 [6815] [INFO] Listening at: http://0.0.0.0:8000 (6815)
+2016-03-27 15:43:51 [6815] [INFO] Using worker: sync
+2016-03-27 15:43:51 [6820] [INFO] Booting worker with pid: 6820
+2016-03-27 12:43:57 [6820] [DEBUG] GET /signup/
+/usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
+  "unable to load templates.", RemovedInDjango110Warning)
+
+2016-03-27 12:43:58 [6820] [DEBUG] GET /signup/
+2016-03-27 12:44:10 [6820] [DEBUG] POST /signup/
+2016-03-27 12:44:10 [6820] [DEBUG] GET /
+2016-03-27 12:44:35 [6820] [DEBUG] GET /login
+Not Found: /login
+2016-03-27 12:44:35 [6820] [DEBUG] GET /login/
+2016-03-27 12:44:42 [6820] [DEBUG] POST /login/
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 128, in login_user
+    user = authenticate(username=post.username, password=post.password)
+NameError: global name 'post' is not defined
+2016-03-27 12:45:51 [6820] [DEBUG] POST /login/
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 128, in login_user
+    user = authenticate(username=form.username, password=form.password)
+NameError: global name 'post' is not defined
+2016-03-27 15:46:07 [6833] [INFO] Starting gunicorn 17.5
+2016-03-27 15:46:07 [6833] [DEBUG] Arbiter booted
+2016-03-27 15:46:07 [6833] [INFO] Listening at: http://0.0.0.0:8000 (6833)
+2016-03-27 15:46:07 [6833] [INFO] Using worker: sync
+2016-03-27 15:46:07 [6838] [INFO] Booting worker with pid: 6838
+2016-03-27 12:46:12 [6838] [DEBUG] GET /login/
+/usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
+  "unable to load templates.", RemovedInDjango110Warning)
+
+2016-03-27 12:46:17 [6838] [DEBUG] POST /login/
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 128, in login_user
+    user = authenticate(username=form.username, password=form.password)
+AttributeError: 'LogForm' object has no attribute 'username'
+2016-03-27 15:48:31 [6859] [INFO] Starting gunicorn 17.5
+2016-03-27 15:48:31 [6859] [DEBUG] Arbiter booted
+2016-03-27 15:48:31 [6859] [INFO] Listening at: http://0.0.0.0:8000 (6859)
+2016-03-27 15:48:31 [6859] [INFO] Using worker: sync
+2016-03-27 15:48:31 [6864] [INFO] Booting worker with pid: 6864
+2016-03-27 12:48:37 [6864] [DEBUG] GET /login/
+/usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
+  "unable to load templates.", RemovedInDjango110Warning)
+
+2016-03-27 12:48:42 [6864] [DEBUG] POST /login/
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 128, in login_user
+    post = form.save()
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/forms.py", line 10, in save
+    user = User(**self.cleaned_data)
+AttributeError: 'LogForm' object has no attribute 'cleaned_data'
+2016-03-27 15:55:06 [6876] [INFO] Starting gunicorn 17.5
+2016-03-27 15:55:06 [6876] [DEBUG] Arbiter booted
+2016-03-27 15:55:06 [6876] [INFO] Listening at: http://0.0.0.0:8000 (6876)
+2016-03-27 15:55:06 [6876] [INFO] Using worker: sync
+2016-03-27 15:55:06 [6881] [INFO] Booting worker with pid: 6881
+2016-03-27 12:55:38 [6881] [DEBUG] GET /login/
+/usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
+  "unable to load templates.", RemovedInDjango110Warning)
+
+2016-03-27 12:55:39 [6881] [DEBUG] GET /login/
+2016-03-27 12:55:41 [6881] [DEBUG] GET /login/
+2016-03-27 12:55:50 [6881] [DEBUG] POST /login/
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 128, in login_user
+    post = form.save()
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/forms.py", line 10, in save
+    user = User(**self.cleaned_data)
+AttributeError: 'LogForm' object has no attribute 'cleaned_data'
+2016-03-27 13:00:45 [6881] [DEBUG] GET /login/
+2016-03-27 13:00:51 [6881] [DEBUG] POST /login/
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 128, in login_user
+    post = form.save()
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/forms.py", line 10, in save
+    user = User(**self.cleaned_data)
+AttributeError: 'LogForm' object has no attribute 'cleaned_data'
+2016-03-27 16:01:08 [6893] [INFO] Starting gunicorn 17.5
+2016-03-27 16:01:08 [6893] [DEBUG] Arbiter booted
+2016-03-27 16:01:08 [6893] [INFO] Listening at: http://0.0.0.0:8000 (6893)
+2016-03-27 16:01:08 [6893] [INFO] Using worker: sync
+2016-03-27 16:01:08 [6898] [INFO] Booting worker with pid: 6898
+2016-03-27 13:01:14 [6898] [DEBUG] GET /login/
+/usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
+  "unable to load templates.", RemovedInDjango110Warning)
+
+2016-03-27 13:01:20 [6898] [DEBUG] POST /login/
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 130, in login_user
+    if user.is_active:
+AttributeError: 'NoneType' object has no attribute 'is_active'
+2016-03-27 13:06:22 [6898] [DEBUG] POST /login/
+Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 130, in login_user
+    if user is not None:
+AttributeError: 'NoneType' object has no attribute 'is_active'
+2016-03-27 13:06:32 [6898] [DEBUG] GET /signup/
+2016-03-27 13:06:50 [6898] [DEBUG] POST /signup/
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 107, in signup
+    login(request, user)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/__init__.py", line 97, in login
+    user = request.user
+AttributeError: 'WSGIRequest' object has no attribute 'user'
+2016-03-27 16:07:26 [6910] [INFO] Starting gunicorn 17.5
+2016-03-27 16:07:26 [6910] [DEBUG] Arbiter booted
+2016-03-27 16:07:26 [6910] [INFO] Listening at: http://0.0.0.0:8000 (6910)
+2016-03-27 16:07:26 [6910] [INFO] Using worker: sync
+2016-03-27 16:07:26 [6915] [INFO] Booting worker with pid: 6915
+2016-03-27 13:07:32 [6915] [DEBUG] GET /signup/
+/usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
+  "unable to load templates.", RemovedInDjango110Warning)
+
+2016-03-27 13:07:46 [6915] [DEBUG] POST /signup/
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 107, in signup
+    login(request, user)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/__init__.py", line 97, in login
+    user = request.user
+AttributeError: 'WSGIRequest' object has no attribute 'user'
+2016-03-27 16:10:21 [6930] [INFO] Starting gunicorn 17.5
+2016-03-27 16:10:21 [6930] [DEBUG] Arbiter booted
+2016-03-27 16:10:21 [6930] [INFO] Listening at: http://0.0.0.0:8000 (6930)
+2016-03-27 16:10:21 [6930] [INFO] Using worker: sync
+2016-03-27 16:10:21 [6935] [INFO] Booting worker with pid: 6935
+2016-03-27 13:10:27 [6935] [DEBUG] POST /signup/
+2016-03-27 13:10:27 [6935] [DEBUG] GET /
+/usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
+  "unable to load templates.", RemovedInDjango110Warning)
+
+2016-03-27 13:10:37 [6935] [DEBUG] GET /login/
+2016-03-27 13:10:43 [6935] [DEBUG] POST /login/
+2016-03-27 13:10:43 [6935] [DEBUG] GET /
