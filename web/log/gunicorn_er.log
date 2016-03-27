@@ -2703,3 +2703,147 @@ AttributeError: 'WSGIRequest' object has no attribute 'user'
 2016-03-27 13:10:37 [6935] [DEBUG] GET /login/
 2016-03-27 13:10:43 [6935] [DEBUG] POST /login/
 2016-03-27 13:10:43 [6935] [DEBUG] GET /
+2016-03-27 13:20:56 [6935] [DEBUG] GET /signup/
+2016-03-27 13:20:58 [6935] [DEBUG] GET /favicon.ico
+Not Found: /favicon.ico
+2016-03-27 13:20:59 [6935] [DEBUG] POST /signup/
+2016-03-27 13:21:01 [6935] [DEBUG] POST /signup/
+2016-03-27 13:21:03 [6935] [DEBUG] POST /signup/
+2016-03-27 13:21:03 [6935] [DEBUG] POST /signup/
+2016-03-27 13:21:04 [6935] [DEBUG] POST /signup/
+2016-03-27 13:21:05 [6935] [DEBUG] POST /signup/
+2016-03-27 13:21:05 [6935] [DEBUG] POST /signup/
+2016-03-27 13:21:16 [6935] [DEBUG] POST /signup/
+2016-03-27 13:21:17 [6935] [DEBUG] POST /signup/
+2016-03-27 13:21:23 [6935] [DEBUG] POST /signup/
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 107, in signup
+    login(request, user)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/__init__.py", line 111, in login
+    request.session[SESSION_KEY] = user._meta.pk.value_to_string(user)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 205, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute '_meta'
+2016-03-27 13:21:25 [6935] [DEBUG] Ignoring EPIPE
+2016-03-27 13:21:25 [6935] [DEBUG] POST /signup/
+2016-03-27 13:21:25 [6935] [DEBUG] GET /
+2016-03-27 16:29:58 [7641] [INFO] Starting gunicorn 17.5
+2016-03-27 16:29:58 [7641] [DEBUG] Arbiter booted
+2016-03-27 16:29:58 [7641] [INFO] Listening at: http://0.0.0.0:8000 (7641)
+2016-03-27 16:29:58 [7641] [INFO] Using worker: sync
+2016-03-27 16:29:58 [7646] [INFO] Booting worker with pid: 7646
+2016-03-27 13:30:13 [7646] [DEBUG] GET /signup/
+/usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
+  "unable to load templates.", RemovedInDjango110Warning)
+
+2016-03-27 13:30:28 [7646] [DEBUG] GET /signup/
+2016-03-27 13:30:36 [7646] [DEBUG] POST /signup/
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 107, in signup
+    login(request, user)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/__init__.py", line 111, in login
+    request.session[SESSION_KEY] = user._meta.pk.value_to_string(user)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 205, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute '_meta'
+2016-03-27 13:43:37 [7646] [INFO] Parent changed, shutting down: <Worker 7646>
+2016-03-27 13:43:37 [7646] [INFO] Worker exiting (pid: 7646)
+2016-03-27 16:43:42 [7671] [INFO] Starting gunicorn 17.5
+2016-03-27 16:43:42 [7671] [DEBUG] Arbiter booted
+2016-03-27 16:43:42 [7671] [INFO] Listening at: http://0.0.0.0:8000 (7671)
+2016-03-27 16:43:42 [7671] [INFO] Using worker: sync
+2016-03-27 16:43:42 [7676] [INFO] Booting worker with pid: 7676
+2016-03-27 13:43:52 [7676] [DEBUG] GET /signup/
+/usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
+  "unable to load templates.", RemovedInDjango110Warning)
+
+2016-03-27 13:43:52 [7676] [DEBUG] GET /favicon.ico
+Not Found: /favicon.ico
+2016-03-27 13:44:04 [7676] [DEBUG] POST /signup/
+Internal Server Error: /signup/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tayfen/develop/stepic/web_apps/web/ask/qa/views.py", line 107, in signup
+    login(request, user)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/auth/__init__.py", line 111, in login
+    request.session[SESSION_KEY] = user._meta.pk.value_to_string(user)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 205, in inner
+    return func(self._wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute '_meta'
+2016-03-27 17:03:52 [7725] [INFO] Starting gunicorn 17.5
+2016-03-27 17:03:52 [7725] [DEBUG] Arbiter booted
+2016-03-27 17:03:52 [7725] [INFO] Listening at: http://0.0.0.0:8000 (7725)
+2016-03-27 17:03:52 [7725] [INFO] Using worker: sync
+2016-03-27 17:03:52 [7730] [INFO] Booting worker with pid: 7730
+2016-03-27 14:04:39 [7730] [DEBUG] GET /signup/
+/usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
+  "unable to load templates.", RemovedInDjango110Warning)
+
+2016-03-27 14:04:48 [7730] [DEBUG] POST /signup/
+2016-03-27 14:05:20 [7730] [DEBUG] GET /signup/
+2016-03-27 14:05:23 [7730] [DEBUG] GET /signup/
+2016-03-27 14:05:24 [7730] [DEBUG] GET /favicon.ico
+Not Found: /favicon.ico
+2016-03-27 14:05:34 [7730] [DEBUG] POST /signup/
+2016-03-27 14:05:36 [7730] [DEBUG] GET /signup/
+2016-03-27 14:05:39 [7730] [DEBUG] GET /signup/
+2016-03-27 14:05:39 [7730] [DEBUG] GET /favicon.ico
+Not Found: /favicon.ico
+2016-03-27 17:05:54 [7757] [INFO] Starting gunicorn 17.5
+2016-03-27 17:05:54 [7757] [DEBUG] Arbiter booted
+2016-03-27 17:05:54 [7757] [INFO] Listening at: http://0.0.0.0:8000 (7757)
+2016-03-27 17:05:54 [7757] [INFO] Using worker: sync
+2016-03-27 17:05:54 [7762] [INFO] Booting worker with pid: 7762
+2016-03-27 14:05:59 [7762] [DEBUG] GET /signup/
+/usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
+  "unable to load templates.", RemovedInDjango110Warning)
+
+2016-03-27 14:05:59 [7762] [DEBUG] GET /favicon.ico
+Not Found: /favicon.ico
+2016-03-27 14:06:07 [7762] [DEBUG] POST /signup/
+2016-03-27 17:07:53 [7780] [INFO] Starting gunicorn 17.5
+2016-03-27 17:07:53 [7780] [DEBUG] Arbiter booted
+2016-03-27 17:07:53 [7780] [INFO] Listening at: http://0.0.0.0:8000 (7780)
+2016-03-27 17:07:53 [7780] [INFO] Using worker: sync
+2016-03-27 17:07:53 [7785] [INFO] Booting worker with pid: 7785
+2016-03-27 14:07:57 [7785] [DEBUG] GET /signup/
+/usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
+  "unable to load templates.", RemovedInDjango110Warning)
+
+2016-03-27 14:07:59 [7785] [DEBUG] GET /signup/
+2016-03-27 14:07:59 [7785] [DEBUG] GET /favicon.ico
+Not Found: /favicon.ico
+2016-03-27 14:08:18 [7785] [DEBUG] POST /signup/
+2016-03-27 17:09:28 [7802] [INFO] Starting gunicorn 17.5
+2016-03-27 17:09:28 [7802] [DEBUG] Arbiter booted
+2016-03-27 17:09:28 [7802] [INFO] Listening at: http://0.0.0.0:8000 (7802)
+2016-03-27 17:09:28 [7802] [INFO] Using worker: sync
+2016-03-27 17:09:28 [7807] [INFO] Booting worker with pid: 7807
+2016-03-27 14:09:31 [7807] [DEBUG] GET /signup/
+/usr/local/lib/python2.7/dist-packages/django/template/utils.py:37: RemovedInDjango110Warning: You haven't defined a TEMPLATES setting. You must do so before upgrading to Django 1.10. Otherwise Django will be unable to load templates.
+  "unable to load templates.", RemovedInDjango110Warning)
+
+2016-03-27 14:09:33 [7807] [DEBUG] GET /signup/
+2016-03-27 14:09:33 [7807] [DEBUG] GET /favicon.ico
+Not Found: /favicon.ico
+2016-03-27 14:09:44 [7807] [DEBUG] POST /signup/
+2016-03-27 14:09:44 [7807] [DEBUG] GET /

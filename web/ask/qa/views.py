@@ -103,7 +103,7 @@ def signup(request):
         if form.is_valid():
             post = form.save()
             if post:
-                user = authenticate(username=post.username, password=post.password)
+                user = authenticate(username=request.POST['username'], password=request.POST['password'])
                 login(request, user)
             #url = post._get_url()
             #return HttpResponse('dsa')

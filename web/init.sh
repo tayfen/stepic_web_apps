@@ -1,4 +1,5 @@
 https://github.com/skolomiiets/ask
+git clone https://github.com/tayfen/stepic_web_apps.git
 
 #! /bin/sh
 #export STEPIC_WEBAPPS=/home/tayfen/stepic/web_apps/web

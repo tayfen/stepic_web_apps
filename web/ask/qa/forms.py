@@ -13,7 +13,7 @@ class LogForm(forms.Form):
 
 class SignForm(forms.Form):
     username = forms.CharField(max_length=20)
-    email = forms.EmailField(widget=forms.Textarea, help_text = 'valid email, please')
+    email = forms.CharField(max_length=20)
     password = forms.CharField(max_length=20)
 
     def save(self):
@@ -22,7 +22,8 @@ class SignForm(forms.Form):
             user1 = User.objects.get(username=user.username)
             return None
         except User.DoesNotExist:
-            user.save()
+            user = User.objects.create_user(**self.cleaned_data)
+            #user.save()
             return user
             
 class AskForm(forms.Form):
